@@ -1,0 +1,6 @@
+@CorlateBlog.Api_HostAddress = http://localhost:5086
+
+GET {{CorlateBlog.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
