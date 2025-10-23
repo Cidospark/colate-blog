@@ -1,4 +1,6 @@
+using CorlateBlog.Application.Repositories;
 using CorlateBlog.Infrastructure.Data;
+using CorlateBlog.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +17,8 @@ namespace EmployeeManagmeentSystem.Infrastructure
 
 
             // other infrastructure services like (repositories, logging, etc.) will go in here...
+            services.AddScoped<IPostCommentRepository, PostCommentRepository>();
+
 
             return services;
         }
