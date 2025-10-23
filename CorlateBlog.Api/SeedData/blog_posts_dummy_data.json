@@ -428,13 +428,13 @@
     "CommentsReplies": 0,
     "CommentCount": 1,
     "PostTags": [
-      "dotnet",
-      "clean-architecture",
-      "software-design"
+        { "tag": "dotnet" },
+        { "tag": "clean-architecture" },
+        { "tag": "software-design" }
     ],
     "PostCategories": [
-      "Programming",
-      "Backend"
+        { "postCategory": "Programming" },
+        { "postCatgory": "Backend" }
     ]
   },
   {
@@ -484,13 +484,13 @@
     "CommentsReplies": 5,
     "CommentCount": 3,
     "PostTags": [
-      "dotnet",
-      "clean-architecture",
-      "software-design"
+        { "tag": "dotnet" },
+        { "tag": "clean-architecture" },
+        { "tag": "software-design" }
     ],
     "PostCategories": [
-      "Programming",
-      "Backend"
+        { "postCategory": "Programming" },
+        { "postCategory": "Backend" }
     ]
   },
   {
@@ -507,13 +507,13 @@
     "CommentsReplies": 0,
     "CommentCount": 1,
     "PostTags": [
-      "csharp",
-      "linq",
-      "dotnet"
+        { "tag": "csharp" },
+        { "tag": "linq" },
+        { "tag": "dotnet" }
     ],
     "PostCategories": [
-      "Programming",
-      "Backend"
+        { "tag": "Programming" },
+        { "tag": "Backend" }
     ]
   },
   {
@@ -554,13 +554,13 @@
     "CommentsReplies": 3,
     "CommentCount": 3,
     "PostTags": [
-      "docker",
-      "kubernetes",
-      "cloud"
+        { "tag": "docker" },
+        { "tag": "kubernetes" },
+        { "tag": "cloud" }
     ],
     "PostCategories": [
-      "DevOps",
-      "Cloud"
+        { "postCategory": "DevOps" },
+        { "postCategory": "Cloud" }
     ]
   },
   {
@@ -587,13 +587,13 @@
     "CommentsReplies": 1,
     "CommentCount": 2,
     "PostTags": [
-      "rest",
-      "api",
-      "backend"
+        { "tag": "rest" },
+        { "tag": "api" },
+        { "tag": "backend" }
     ],
     "PostCategories": [
-      "Backend",
-      "API"
+        { "postCategory": "Backend" },
+        { "postCategory": "API" }
     ]
   },
   {
@@ -625,13 +625,13 @@
     "CommentsReplies": 1,
     "CommentCount": 3,
     "PostTags": [
-      "csharp",
-      "linq",
-      "dotnet"
+        { "tag": "csharp" },
+        { "tag": "linq" },
+        { "tag": "dotnet" }
     ],
     "PostCategories": [
-      "Programming",
-      "Backend"
+        { "postCategory": "Programming" },
+        { "postCategory": "Backend" }
     ]
   },
   {
@@ -653,13 +653,13 @@
     "CommentsReplies": 1,
     "CommentCount": 1,
     "PostTags": [
-      "dotnet",
-      "clean-architecture",
-      "software-design"
+        { "tag": "dotnet" },
+        { "tag": "clean-architecture" },
+        { "tag": "software-design" }
     ],
     "PostCategories": [
-      "Programming",
-      "Backend"
+        { "postCategory": "Programming" },
+        { "postCategory": "Backend" }
     ]
   },
   {
@@ -686,13 +686,13 @@
     "CommentsReplies": 1,
     "CommentCount": 2,
     "PostTags": [
-      "cqrs",
-      "event-sourcing",
-      "ddd"
+        { "tag": "cqrs" },
+        { "tag": "event-sourcing" },
+        { "tag": "ddd" }
     ],
     "PostCategories": [
-      "Architecture",
-      "Backend"
+        { "postCategory": "Architecture" },
+        { "postCategory": "Backend" }
     ]
   },
   {
