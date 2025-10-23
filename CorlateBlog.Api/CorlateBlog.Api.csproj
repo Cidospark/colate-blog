@@ -5,11 +5,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10"/>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6"/>
-    <ProjectReference Include="../CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj"/>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+    <ProjectReference Include="../CorlateBlog.Application/CorlateBlog.Application.csproj" />
+    <ProjectReference Include="../CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

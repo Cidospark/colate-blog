@@ -27,6 +27,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Application/CorlateBlog.Application.csproj": {
+                "projectPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Application/CorlateBlog.Application.csproj"
+              },
               "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj": {
                 "projectPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj"
               }
@@ -77,6 +80,76 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Application/CorlateBlog.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Application/CorlateBlog.Application.csproj",
+        "projectName": "CorlateBlog.Application",
+        "projectPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Application/CorlateBlog.Application.csproj",
+        "packagesPath": "/Users/mrfrancis/.nuget/packages/",
+        "outputPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mrfrancis/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Domain/CorlateBlog.Domain.csproj": {
+                "projectPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Domain/CorlateBlog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
