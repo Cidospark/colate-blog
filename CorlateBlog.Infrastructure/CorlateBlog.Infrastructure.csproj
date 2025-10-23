@@ -10,7 +10,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="../CorlateBlog.Domain/CorlateBlog.Application.csproj" />
+    <ProjectReference Include="../CorlateBlog.Application/CorlateBlog.Application.csproj" />
     <ProjectReference Include="../CorlateBlog.Domain/CorlateBlog.Domain.csproj" />
   </ItemGroup>
 </Project>
