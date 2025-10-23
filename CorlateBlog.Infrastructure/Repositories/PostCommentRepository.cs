@@ -1,6 +1,7 @@
 ﻿using CorlateBlog.Application.Repositories;
 using CorlateBlog.Domain.Entities;
 using CorlateBlog.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,5 +49,3 @@ namespace CorlateBlog.Infrastructure.Repositories
             }
         }
     }
-}
-}
