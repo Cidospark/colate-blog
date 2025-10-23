@@ -1,14 +1,19 @@
 [
   {
+    "Id": "46161eed-e1d8-4630-90d2-a5b93819bcb3",
     "PostText": "10 essential React hooks every developer should know.",
     "PostPhotoUrl": "https://picsum.photos/seed/1/800/400",
     "PostLikesCount": 616,
     "PostComments": [
       {
+        "Id":"b962c90f-40a0-4c4b-8547-872ea967098c",
+        "BlogId":"46161eed-e1d8-4630-90d2-a5b93819bcb3",
         "Comment": "Great post!",
         "User": "BackendNinja",
         "Replies": [
           {
+            "PostCommentId":"b962c90f-40a0-4c4b-8547-872ea967098c",
+            "Id":"e1170049-14be-4620-8ec8-406e06b0054e",
             "Reply": "Thanks for explaining.",
             "User": "Mentor"
           }
