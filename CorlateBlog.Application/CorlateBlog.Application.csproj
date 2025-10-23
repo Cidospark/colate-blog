@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../CorlateBlog.Domain/CorlateBlog.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

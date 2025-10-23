@@ -4,14 +4,14 @@
     "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj": {
+    "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Domain/CorlateBlog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj",
-        "projectName": "CorlateBlog.Infrastructure",
-        "projectPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj",
+        "projectUniqueName": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Domain/CorlateBlog.Domain.csproj",
+        "projectName": "CorlateBlog.Domain",
+        "projectPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Domain/CorlateBlog.Domain.csproj",
         "packagesPath": "/Users/mrfrancis/.nuget/packages/",
-        "outputPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/obj/",
+        "outputPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mrfrancis/.nuget/NuGet/NuGet.Config"
@@ -44,6 +44,80 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj",
+        "projectName": "CorlateBlog.Infrastructure",
+        "projectPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj",
+        "packagesPath": "/Users/mrfrancis/.nuget/packages/",
+        "outputPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mrfrancis/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Domain/CorlateBlog.Domain.csproj": {
+                "projectPath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Domain/CorlateBlog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

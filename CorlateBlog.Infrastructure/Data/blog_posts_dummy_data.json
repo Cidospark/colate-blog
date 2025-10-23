@@ -1,0 +1,1847 @@
+[
+  {
+    "PostText": "10 essential React hooks every developer should know.",
+    "PostPhotoUrl": "https://picsum.photos/seed/1/800/400",
+    "PostLikesCount": 616,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "BackendNinja",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Mentor"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 1,
+    "PostTags": [
+      "react",
+      "hooks",
+      "javascript"
+    ],
+    "PostCategories": [
+      "Frontend",
+      "Web Development"
+    ]
+  },
+  {
+    "PostText": "Understanding event sourcing in CQRS-based applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/2/800/400",
+    "PostLikesCount": 877,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "CloudHero",
+        "Replies": []
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "CodeReviewer"
+          },
+          {
+            "Reply": "This helped me too.",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 2,
+    "PostTags": [
+      "cqrs",
+      "event-sourcing",
+      "ddd"
+    ],
+    "PostCategories": [
+      "Architecture",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "5 AI tools that can supercharge your software development workflow.",
+    "PostPhotoUrl": "https://picsum.photos/seed/3/800/400",
+    "PostLikesCount": 464,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "CloudHero",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Engineer"
+          },
+          {
+            "Reply": "Nice point!",
+            "User": "Engineer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 1,
+    "PostTags": [
+      "ai",
+      "productivity",
+      "automation"
+    ],
+    "PostCategories": [
+      "Artificial Intelligence",
+      "Development"
+    ]
+  },
+  {
+    "PostText": "How to optimize SQL queries for performance in large databases.",
+    "PostPhotoUrl": "https://picsum.photos/seed/4/800/400",
+    "PostLikesCount": 453,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "QAExpert",
+        "Replies": []
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "CloudHero",
+        "Replies": []
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "TechGuru",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Mentor"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 3,
+    "PostTags": [
+      "sql",
+      "database",
+      "optimization"
+    ],
+    "PostCategories": [
+      "Data",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "How to optimize SQL queries for performance in large databases.",
+    "PostPhotoUrl": "https://picsum.photos/seed/5/800/400",
+    "PostLikesCount": 389,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "DotNetFan",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Learner"
+          },
+          {
+            "Reply": "I agree completely.",
+            "User": "CodeReviewer"
+          }
+        ]
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "BackendNinja",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 2,
+    "PostTags": [
+      "sql",
+      "database",
+      "optimization"
+    ],
+    "PostCategories": [
+      "Data",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Understanding event sourcing in CQRS-based applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/6/800/400",
+    "PostLikesCount": 789,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "DotNetFan",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 0,
+    "CommentCount": 1,
+    "PostTags": [
+      "cqrs",
+      "event-sourcing",
+      "ddd"
+    ],
+    "PostCategories": [
+      "Architecture",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/7/800/400",
+    "PostLikesCount": 489,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "DataNerd",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Engineer"
+          },
+          {
+            "Reply": "I agree completely.",
+            "User": "Learner"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "BackendNinja",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "CodeReviewer"
+          },
+          {
+            "Reply": "This helped me too.",
+            "User": "Engineer"
+          }
+        ]
+      },
+      {
+        "Comment": "Great post!",
+        "User": "CloudHero",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 4,
+    "CommentCount": 3,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "How to optimize SQL queries for performance in large databases.",
+    "PostPhotoUrl": "https://picsum.photos/seed/8/800/400",
+    "PostLikesCount": 905,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "QAExpert",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "Mentor"
+          }
+        ]
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "DevOpsMike",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 2,
+    "PostTags": [
+      "sql",
+      "database",
+      "optimization"
+    ],
+    "PostCategories": [
+      "Data",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "How to optimize SQL queries for performance in large databases.",
+    "PostPhotoUrl": "https://picsum.photos/seed/9/800/400",
+    "PostLikesCount": 719,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "DevOpsMike",
+        "Replies": []
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "FrontendQueen",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 0,
+    "CommentCount": 2,
+    "PostTags": [
+      "sql",
+      "database",
+      "optimization"
+    ],
+    "PostCategories": [
+      "Data",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Tips for designing RESTful APIs with best practices.",
+    "PostPhotoUrl": "https://picsum.photos/seed/10/800/400",
+    "PostLikesCount": 751,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "DevOpsMike",
+        "Replies": []
+      },
+      {
+        "Comment": "Great post!",
+        "User": "DevOpsMike",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 2,
+    "PostTags": [
+      "rest",
+      "api",
+      "backend"
+    ],
+    "PostCategories": [
+      "Backend",
+      "API"
+    ]
+  },
+  {
+    "PostText": "10 essential React hooks every developer should know.",
+    "PostPhotoUrl": "https://picsum.photos/seed/11/800/400",
+    "PostLikesCount": 489,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "CloudHero",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "CodeReviewer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 1,
+    "PostTags": [
+      "react",
+      "hooks",
+      "javascript"
+    ],
+    "PostCategories": [
+      "Frontend",
+      "Web Development"
+    ]
+  },
+  {
+    "PostText": "Building scalable microservices with Docker and Kubernetes.",
+    "PostPhotoUrl": "https://picsum.photos/seed/12/800/400",
+    "PostLikesCount": 673,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "DotNetFan",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "CodeReviewer"
+          },
+          {
+            "Reply": "This helped me too.",
+            "User": "Mentor"
+          }
+        ]
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "FrontendQueen",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Engineer"
+          }
+        ]
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "DataNerd",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 3,
+    "PostTags": [
+      "docker",
+      "kubernetes",
+      "cloud"
+    ],
+    "PostCategories": [
+      "DevOps",
+      "Cloud"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/13/800/400",
+    "PostLikesCount": 191,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "DotNetFan",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 0,
+    "CommentCount": 1,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/14/800/400",
+    "PostLikesCount": 796,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "DevOpsMike",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Engineer"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "DevOpsMike",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Engineer"
+          },
+          {
+            "Reply": "Nice point!",
+            "User": "SeniorDev"
+          }
+        ]
+      },
+      {
+        "Comment": "Great post!",
+        "User": "TechGuru",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Engineer"
+          },
+          {
+            "Reply": "This helped me too.",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 5,
+    "CommentCount": 3,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Mastering C# LINQ queries for cleaner and faster code.",
+    "PostPhotoUrl": "https://picsum.photos/seed/15/800/400",
+    "PostLikesCount": 318,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "BackendNinja",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 0,
+    "CommentCount": 1,
+    "PostTags": [
+      "csharp",
+      "linq",
+      "dotnet"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Building scalable microservices with Docker and Kubernetes.",
+    "PostPhotoUrl": "https://picsum.photos/seed/16/800/400",
+    "PostLikesCount": 935,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "QAExpert",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Author"
+          },
+          {
+            "Reply": "This helped me too.",
+            "User": "Learner"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "FrontendQueen",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Learner"
+          }
+        ]
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "FrontendQueen",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 3,
+    "PostTags": [
+      "docker",
+      "kubernetes",
+      "cloud"
+    ],
+    "PostCategories": [
+      "DevOps",
+      "Cloud"
+    ]
+  },
+  {
+    "PostText": "Tips for designing RESTful APIs with best practices.",
+    "PostPhotoUrl": "https://picsum.photos/seed/17/800/400",
+    "PostLikesCount": 831,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "TechGuru",
+        "Replies": []
+      },
+      {
+        "Comment": "Great post!",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Engineer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 2,
+    "PostTags": [
+      "rest",
+      "api",
+      "backend"
+    ],
+    "PostCategories": [
+      "Backend",
+      "API"
+    ]
+  },
+  {
+    "PostText": "Mastering C# LINQ queries for cleaner and faster code.",
+    "PostPhotoUrl": "https://picsum.photos/seed/18/800/400",
+    "PostLikesCount": 102,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "QAExpert",
+        "Replies": []
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "TechGuru",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Learner"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "CodeMaster",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 3,
+    "PostTags": [
+      "csharp",
+      "linq",
+      "dotnet"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/19/800/400",
+    "PostLikesCount": 642,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "DotNetFan",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 1,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Understanding event sourcing in CQRS-based applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/20/800/400",
+    "PostLikesCount": 986,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "CodeReviewer"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "DevOpsMike",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 2,
+    "PostTags": [
+      "cqrs",
+      "event-sourcing",
+      "ddd"
+    ],
+    "PostCategories": [
+      "Architecture",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "How to optimize SQL queries for performance in large databases.",
+    "PostPhotoUrl": "https://picsum.photos/seed/21/800/400",
+    "PostLikesCount": 253,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "DataNerd",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Engineer"
+          }
+        ]
+      },
+      {
+        "Comment": "Great post!",
+        "User": "BackendNinja",
+        "Replies": []
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "QAExpert",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "CodeReviewer"
+          },
+          {
+            "Reply": "I agree completely.",
+            "User": "Engineer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 3,
+    "PostTags": [
+      "sql",
+      "database",
+      "optimization"
+    ],
+    "PostCategories": [
+      "Data",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "10 essential React hooks every developer should know.",
+    "PostPhotoUrl": "https://picsum.photos/seed/22/800/400",
+    "PostLikesCount": 161,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "BackendNinja",
+        "Replies": []
+      },
+      {
+        "Comment": "Great post!",
+        "User": "BackendNinja",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Engineer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 2,
+    "PostTags": [
+      "react",
+      "hooks",
+      "javascript"
+    ],
+    "PostCategories": [
+      "Frontend",
+      "Web Development"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/23/800/400",
+    "PostLikesCount": 775,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "CloudHero",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "Engineer"
+          },
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "CodeReviewer"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Mentor"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "TechGuru",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 3,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "A deep dive into authentication and authorization in ASP.NET Core.",
+    "PostPhotoUrl": "https://picsum.photos/seed/24/800/400",
+    "PostLikesCount": 196,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "TechGuru",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "Engineer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 1,
+    "PostTags": [
+      "security",
+      "authentication",
+      "authorization"
+    ],
+    "PostCategories": [
+      "Security",
+      "Development"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/25/800/400",
+    "PostLikesCount": 866,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "QAExpert",
+        "Replies": []
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "SeniorDev"
+          },
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Mentor"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 2,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Understanding event sourcing in CQRS-based applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/26/800/400",
+    "PostLikesCount": 872,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Learner"
+          }
+        ]
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "CodeMaster",
+        "Replies": []
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "BackendNinja",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 3,
+    "PostTags": [
+      "cqrs",
+      "event-sourcing",
+      "ddd"
+    ],
+    "PostCategories": [
+      "Architecture",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Understanding event sourcing in CQRS-based applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/27/800/400",
+    "PostLikesCount": 434,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "DevOpsMike",
+        "Replies": []
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "CodeMaster",
+        "Replies": []
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "CodeMaster",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 0,
+    "CommentCount": 3,
+    "PostTags": [
+      "cqrs",
+      "event-sourcing",
+      "ddd"
+    ],
+    "PostCategories": [
+      "Architecture",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "A deep dive into authentication and authorization in ASP.NET Core.",
+    "PostPhotoUrl": "https://picsum.photos/seed/28/800/400",
+    "PostLikesCount": 743,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "DotNetFan",
+        "Replies": []
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "QAExpert",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "CodeReviewer"
+          },
+          {
+            "Reply": "This helped me too.",
+            "User": "Learner"
+          }
+        ]
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "DevOpsMike",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "CodeReviewer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 3,
+    "PostTags": [
+      "security",
+      "authentication",
+      "authorization"
+    ],
+    "PostCategories": [
+      "Security",
+      "Development"
+    ]
+  },
+  {
+    "PostText": "Mastering C# LINQ queries for cleaner and faster code.",
+    "PostPhotoUrl": "https://picsum.photos/seed/29/800/400",
+    "PostLikesCount": 336,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "QAExpert",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Learner"
+          },
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "CodeReviewer"
+          }
+        ]
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "DataNerd",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "Learner"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 2,
+    "PostTags": [
+      "csharp",
+      "linq",
+      "dotnet"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Mastering C# LINQ queries for cleaner and faster code.",
+    "PostPhotoUrl": "https://picsum.photos/seed/30/800/400",
+    "PostLikesCount": 636,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "QAExpert",
+        "Replies": []
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "CodeMaster",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 0,
+    "CommentCount": 2,
+    "PostTags": [
+      "csharp",
+      "linq",
+      "dotnet"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "5 AI tools that can supercharge your software development workflow.",
+    "PostPhotoUrl": "https://picsum.photos/seed/31/800/400",
+    "PostLikesCount": 151,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "CloudHero",
+        "Replies": []
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Author"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 2,
+    "PostTags": [
+      "ai",
+      "productivity",
+      "automation"
+    ],
+    "PostCategories": [
+      "Artificial Intelligence",
+      "Development"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/32/800/400",
+    "PostLikesCount": 913,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "FrontendQueen",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "CodeReviewer"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "CloudHero",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Learner"
+          },
+          {
+            "Reply": "I agree completely.",
+            "User": "Engineer"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "FrontendQueen",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "CodeReviewer"
+          },
+          {
+            "Reply": "Nice point!",
+            "User": "Engineer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 5,
+    "CommentCount": 3,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Understanding event sourcing in CQRS-based applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/33/800/400",
+    "PostLikesCount": 229,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "DataNerd",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "Engineer"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "CloudHero",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "SeniorDev"
+          },
+          {
+            "Reply": "I agree completely.",
+            "User": "Author"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 2,
+    "PostTags": [
+      "cqrs",
+      "event-sourcing",
+      "ddd"
+    ],
+    "PostCategories": [
+      "Architecture",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "10 essential React hooks every developer should know.",
+    "PostPhotoUrl": "https://picsum.photos/seed/34/800/400",
+    "PostLikesCount": 277,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Mentor"
+          },
+          {
+            "Reply": "This helped me too.",
+            "User": "Engineer"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "AIDev",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "Mentor"
+          },
+          {
+            "Reply": "I agree completely.",
+            "User": "Learner"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 4,
+    "CommentCount": 2,
+    "PostTags": [
+      "react",
+      "hooks",
+      "javascript"
+    ],
+    "PostCategories": [
+      "Frontend",
+      "Web Development"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/35/800/400",
+    "PostLikesCount": 468,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "DotNetFan",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Mentor"
+          },
+          {
+            "Reply": "I agree completely.",
+            "User": "Learner"
+          }
+        ]
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "BackendNinja",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Mentor"
+          },
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Engineer"
+          }
+        ]
+      },
+      {
+        "Comment": "Great post!",
+        "User": "QAExpert",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 4,
+    "CommentCount": 3,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "How to optimize SQL queries for performance in large databases.",
+    "PostPhotoUrl": "https://picsum.photos/seed/36/800/400",
+    "PostLikesCount": 471,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "FrontendQueen",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Engineer"
+          },
+          {
+            "Reply": "This helped me too.",
+            "User": "CodeReviewer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 1,
+    "PostTags": [
+      "sql",
+      "database",
+      "optimization"
+    ],
+    "PostCategories": [
+      "Data",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "10 essential React hooks every developer should know.",
+    "PostPhotoUrl": "https://picsum.photos/seed/37/800/400",
+    "PostLikesCount": 192,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "CloudHero",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Author"
+          },
+          {
+            "Reply": "Nice point!",
+            "User": "Mentor"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 1,
+    "PostTags": [
+      "react",
+      "hooks",
+      "javascript"
+    ],
+    "PostCategories": [
+      "Frontend",
+      "Web Development"
+    ]
+  },
+  {
+    "PostText": "Tips for designing RESTful APIs with best practices.",
+    "PostPhotoUrl": "https://picsum.photos/seed/38/800/400",
+    "PostLikesCount": 602,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "FrontendQueen",
+        "Replies": []
+      },
+      {
+        "Comment": "Great post!",
+        "User": "DotNetFan",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "CodeReviewer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 2,
+    "PostTags": [
+      "rest",
+      "api",
+      "backend"
+    ],
+    "PostCategories": [
+      "Backend",
+      "API"
+    ]
+  },
+  {
+    "PostText": "5 AI tools that can supercharge your software development workflow.",
+    "PostPhotoUrl": "https://picsum.photos/seed/39/800/400",
+    "PostLikesCount": 862,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "AIDev",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 0,
+    "CommentCount": 1,
+    "PostTags": [
+      "ai",
+      "productivity",
+      "automation"
+    ],
+    "PostCategories": [
+      "Artificial Intelligence",
+      "Development"
+    ]
+  },
+  {
+    "PostText": "The art of writing maintainable unit tests with NUnit.",
+    "PostPhotoUrl": "https://picsum.photos/seed/40/800/400",
+    "PostLikesCount": 388,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "DevOpsMike",
+        "Replies": []
+      },
+      {
+        "Comment": "Great post!",
+        "User": "CodeMaster",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 0,
+    "CommentCount": 2,
+    "PostTags": [
+      "testing",
+      "nunit",
+      "quality"
+    ],
+    "PostCategories": [
+      "Quality Assurance",
+      "Testing"
+    ]
+  },
+  {
+    "PostText": "Mastering C# LINQ queries for cleaner and faster code.",
+    "PostPhotoUrl": "https://picsum.photos/seed/41/800/400",
+    "PostLikesCount": 340,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "BackendNinja",
+        "Replies": []
+      },
+      {
+        "Comment": "Great post!",
+        "User": "CloudHero",
+        "Replies": []
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "TechGuru",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 3,
+    "PostTags": [
+      "csharp",
+      "linq",
+      "dotnet"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/42/800/400",
+    "PostLikesCount": 812,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "BackendNinja",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Engineer"
+          },
+          {
+            "Reply": "Nice point!",
+            "User": "SeniorDev"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "BackendNinja",
+        "Replies": []
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "DataNerd",
+        "Replies": [
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 3,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/43/800/400",
+    "PostLikesCount": 523,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "AIDev",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "CodeReviewer"
+          },
+          {
+            "Reply": "Nice point!",
+            "User": "CodeReviewer"
+          }
+        ]
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "SeniorDev"
+          },
+          {
+            "Reply": "Nice point!",
+            "User": "Author"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "DataNerd",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 4,
+    "CommentCount": 3,
+    "PostTags": [
+      "dotnet",
+      "clean-architecture",
+      "software-design"
+    ],
+    "PostCategories": [
+      "Programming",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Understanding event sourcing in CQRS-based applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/44/800/400",
+    "PostLikesCount": 457,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "AIDev",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 1,
+    "PostTags": [
+      "cqrs",
+      "event-sourcing",
+      "ddd"
+    ],
+    "PostCategories": [
+      "Architecture",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "How to optimize SQL queries for performance in large databases.",
+    "PostPhotoUrl": "https://picsum.photos/seed/45/800/400",
+    "PostLikesCount": 960,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "DataNerd",
+        "Replies": []
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "TechGuru",
+        "Replies": []
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "Author"
+          },
+          {
+            "Reply": "I agree completely.",
+            "User": "CodeReviewer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 3,
+    "PostTags": [
+      "sql",
+      "database",
+      "optimization"
+    ],
+    "PostCategories": [
+      "Data",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "10 essential React hooks every developer should know.",
+    "PostPhotoUrl": "https://picsum.photos/seed/46/800/400",
+    "PostLikesCount": 466,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "QAExpert",
+        "Replies": []
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "DataNerd",
+        "Replies": [
+          {
+            "Reply": "I agree completely.",
+            "User": "SeniorDev"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "QAExpert",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 3,
+    "PostTags": [
+      "react",
+      "hooks",
+      "javascript"
+    ],
+    "PostCategories": [
+      "Frontend",
+      "Web Development"
+    ]
+  },
+  {
+    "PostText": "Building scalable microservices with Docker and Kubernetes.",
+    "PostPhotoUrl": "https://picsum.photos/seed/47/800/400",
+    "PostLikesCount": 184,
+    "PostComments": [
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "CloudHero",
+        "Replies": []
+      },
+      {
+        "Comment": "Can you elaborate on this part?",
+        "User": "QAExpert",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "SeniorDev"
+          },
+          {
+            "Reply": "Thanks for explaining.",
+            "User": "Engineer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 2,
+    "PostTags": [
+      "docker",
+      "kubernetes",
+      "cloud"
+    ],
+    "PostCategories": [
+      "DevOps",
+      "Cloud"
+    ]
+  },
+  {
+    "PostText": "Understanding event sourcing in CQRS-based applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/48/800/400",
+    "PostLikesCount": 574,
+    "PostComments": [
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "AIDev",
+        "Replies": [
+          {
+            "Reply": "Nice point!",
+            "User": "Engineer"
+          },
+          {
+            "Reply": "I agree completely.",
+            "User": "CodeReviewer"
+          }
+        ]
+      },
+      {
+        "Comment": "Very helpful.",
+        "User": "FrontendQueen",
+        "Replies": []
+      },
+      {
+        "Comment": "I learned a lot from this.",
+        "User": "CloudHero",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Engineer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 3,
+    "PostTags": [
+      "cqrs",
+      "event-sourcing",
+      "ddd"
+    ],
+    "PostCategories": [
+      "Architecture",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "How to optimize SQL queries for performance in large databases.",
+    "PostPhotoUrl": "https://picsum.photos/seed/49/800/400",
+    "PostLikesCount": 800,
+    "PostComments": [
+      {
+        "Comment": "Very helpful.",
+        "User": "BackendNinja",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Engineer"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 1,
+    "PostTags": [
+      "sql",
+      "database",
+      "optimization"
+    ],
+    "PostCategories": [
+      "Data",
+      "Backend"
+    ]
+  },
+  {
+    "PostText": "Tips for designing RESTful APIs with best practices.",
+    "PostPhotoUrl": "https://picsum.photos/seed/50/800/400",
+    "PostLikesCount": 400,
+    "PostComments": [
+      {
+        "Comment": "Great post!",
+        "User": "CloudHero",
+        "Replies": [
+          {
+            "Reply": "This helped me too.",
+            "User": "Learner"
+          },
+          {
+            "Reply": "This helped me too.",
+            "User": "Mentor"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 2,
+    "CommentCount": 1,
+    "PostTags": [
+      "rest",
+      "api",
+      "backend"
+    ],
+    "PostCategories": [
+      "Backend",
+      "API"
+    ]
+  }
+]
