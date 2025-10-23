@@ -23,8 +23,8 @@
       {"tag": "javascript"}
     ],
     "PostCategories": [
-      "Frontend",
-      "Web Development"
+      {"postCategory":"Frontend"},
+      {"postCategory":"Web Development"}
     ]
   },
   {
@@ -60,8 +60,8 @@
       {"tag": "ddd"}
     ],
     "PostCategories": [
-      "Architecture",
-      "Backend"
+      {"postCategory":"Architecture"},
+      {"postCategory":"Backend"}
     ]
   },
   {
@@ -92,8 +92,8 @@
       {"tag": "automation"}
     ],
     "PostCategories": [
-      "Artificial Intelligence",
-      "Development"
+      {"postCategory":"Artificial Intelligence"},
+      {"postCategory":"Development"}
     ]
   },
   {
@@ -130,8 +130,8 @@
       {"tag": "optimization"}
     ],
     "PostCategories": [
-      "Data",
-      "Backend"
+      {"postCategory":"Data"},
+      {"postCategory":"Backend"}
     ]
   },
   {
@@ -167,8 +167,8 @@
       {"tag": "optimization"}
     ],
     "PostCategories": [
-      "Data",
-      "Backend"
+     {"postCategory": "Data"},
+      {"postCategory":"Backend"}
     ]
   },
   {
@@ -190,8 +190,8 @@
       {"tag": "ddd"}
     ],
     "PostCategories": [
-      "Architecture",
-      "Backend"
+      {"postCategory":"Architecture"},
+      {"postCategory":"Backend"}
     ]
   },
   {
@@ -241,8 +241,8 @@
       {"tag": "software-design"}
     ],
     "PostCategories": [
-      "Programming",
-      "Backend"
+      {"postCategory":"Programming"},
+      {"postCategory":"Backend"}
     ]
   },
   {
@@ -274,8 +274,8 @@
       {"tag": "optimization"}
     ],
     "PostCategories": [
-      "Data",
-      "Backend"
+      {"postCategory":"Data"},
+      {"postCategory":"Backend"}
     ]
   },
   {
@@ -302,8 +302,8 @@
       {"tag": "optimization"}
     ],
     "PostCategories": [
-      "Data",
-      "Backend"
+      {"postCategory":"Data"},
+      {"postCategory":"Backend"}
     ]
   },
   {
@@ -335,8 +335,8 @@
       {"tag": "backend"}
     ],
     "PostCategories": [
-      "Backend",
-      "API"
+      {"postCategory":"Backend"},
+      {"postCategory":"API"}
     ]
   },
   {
@@ -363,8 +363,8 @@
       {"tag": "javascript"}
     ],
     "PostCategories": [
-      "Frontend",
-      "Web Development"
+      {"postCategory":"Frontend"},
+      {"postCategory":"Web Development"}
     ]
   },
   {
@@ -410,8 +410,8 @@
       {"tag": "cloud"}
     ],
     "PostCategories": [
-      "DevOps",
-      "Cloud"
+      {"postCategory":"DevOps"},
+      {"postCategory":"Cloud"}
     ]
   },
   {
