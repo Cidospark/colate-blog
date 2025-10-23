@@ -714,9 +714,9 @@
     "CommentsReplies": 0,
     "CommentCount": 2,
     "PostTags": [
-      "testing",
-      "nunit",
-      "quality"
+      { "tag": "testing"},
+      { "tag": "nunit"},
+      { "tag": "quality"}
     ],
     "PostCategories": [
       {"postCategory": "Quality Assurance"},
