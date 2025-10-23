@@ -18,9 +18,9 @@
     "CommentsReplies": 1,
     "CommentCount": 1,
     "PostTags": [
-      "react",
-      "hooks",
-      "javascript"
+      {"tag": "react"},
+      {"tag": "hooks"},
+      {"tag": "javascript"}
     ],
     "PostCategories": [
       "Frontend",
@@ -55,9 +55,9 @@
     "CommentsReplies": 2,
     "CommentCount": 2,
     "PostTags": [
-      "cqrs",
-      "event-sourcing",
-      "ddd"
+      {"tag": "cqrs"},
+      {"tag": "event-sourcing"},
+      {"tag": "ddd"}
     ],
     "PostCategories": [
       "Architecture",
@@ -87,9 +87,9 @@
     "CommentsReplies": 2,
     "CommentCount": 1,
     "PostTags": [
-      "ai",
-      "productivity",
-      "automation"
+      {"tag": "ai"},
+      {"tag": "productivity"},
+      {"tag": "automation"}
     ],
     "PostCategories": [
       "Artificial Intelligence",
@@ -125,9 +125,9 @@
     "CommentsReplies": 1,
     "CommentCount": 3,
     "PostTags": [
-      "sql",
-      "database",
-      "optimization"
+      {"tag": "sql"},
+      {"tag": "database"},
+      {"tag": "optimization"}
     ],
     "PostCategories": [
       "Data",
@@ -162,9 +162,9 @@
     "CommentsReplies": 2,
     "CommentCount": 2,
     "PostTags": [
-      "sql",
-      "database",
-      "optimization"
+      {"tag": "sql"},
+      {"tag": "database"},
+      {"tag": "optimization"}
     ],
     "PostCategories": [
       "Data",
@@ -185,9 +185,9 @@
     "CommentsReplies": 0,
     "CommentCount": 1,
     "PostTags": [
-      "cqrs",
-      "event-sourcing",
-      "ddd"
+      {"tag": "cqrs"},
+      {"tag": "event-sourcing"},
+      {"tag": "ddd"}
     ],
     "PostCategories": [
       "Architecture",
@@ -236,9 +236,9 @@
     "CommentsReplies": 4,
     "CommentCount": 3,
     "PostTags": [
-      "dotnet",
-      "clean-architecture",
-      "software-design"
+      {"tag": "dotnet"},
+      {"tag": "clean-architecture"},
+      {"tag": "software-design"}
     ],
     "PostCategories": [
       "Programming",
@@ -269,9 +269,9 @@
     "CommentsReplies": 1,
     "CommentCount": 2,
     "PostTags": [
-      "sql",
-      "database",
-      "optimization"
+      {"tag": "sql"},
+      {"tag": "database"},
+      {"tag": "optimization"}
     ],
     "PostCategories": [
       "Data",
@@ -297,9 +297,9 @@
     "CommentsReplies": 0,
     "CommentCount": 2,
     "PostTags": [
-      "sql",
-      "database",
-      "optimization"
+      {"tag": "sql"},
+      {"tag": "database"},
+      {"tag": "optimization"}
     ],
     "PostCategories": [
       "Data",
@@ -330,9 +330,9 @@
     "CommentsReplies": 1,
     "CommentCount": 2,
     "PostTags": [
-      "rest",
-      "api",
-      "backend"
+      {"tag": "rest"},
+      {"tag": "api"},
+      {"tag": "backend"}
     ],
     "PostCategories": [
       "Backend",
@@ -358,9 +358,9 @@
     "CommentsReplies": 1,
     "CommentCount": 1,
     "PostTags": [
-      "react",
-      "hooks",
-      "javascript"
+      {"tag": "react"},
+      {"tag": "hooks"},
+      {"tag": "javascript"}
     ],
     "PostCategories": [
       "Frontend",
@@ -405,9 +405,9 @@
     "CommentsReplies": 3,
     "CommentCount": 3,
     "PostTags": [
-      "docker",
-      "kubernetes",
-      "cloud"
+      {"tag": "docker"},
+      {"tag": "kubernetes"},
+      {"tag": "cloud"}
     ],
     "PostCategories": [
       "DevOps",

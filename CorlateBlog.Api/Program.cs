@@ -1,3 +1,4 @@
+using CorlateBlog.Infrastructure.Data;
 using EmployeeManagmeentSystem.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,5 +27,11 @@ app.UseSwaggerUI();
 app.UseAuthorization();
 
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await Seeder.SeedMe(services);
+}
 
 app.Run();

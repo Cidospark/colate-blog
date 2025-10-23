@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "niRO1F1chcM=",
+  "dgSpecHash": "hbZrDuGAfv0=",
   "success": true,
   "projectFilePath": "/Users/mrfrancis/Desktop/colate-blog/CorlateBlog.Infrastructure/CorlateBlog.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "/Users/mrfrancis/.nuget/packages/microsoft.extensions.options/9.0.10/microsoft.extensions.options.9.0.10.nupkg.sha512",
     "/Users/mrfrancis/.nuget/packages/microsoft.extensions.primitives/9.0.10/microsoft.extensions.primitives.9.0.10.nupkg.sha512",
     "/Users/mrfrancis/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
+    "/Users/mrfrancis/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/mrfrancis/.nuget/packages/npgsql/9.0.3/npgsql.9.0.3.nupkg.sha512",
     "/Users/mrfrancis/.nuget/packages/npgsql.entityframeworkcore.postgresql/9.0.4/npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "/Users/mrfrancis/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
