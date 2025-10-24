@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CorlateBlog.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04bc0f4fe044d4784eec4f27b912ea912890c863")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d183f067c4c263d171c98ea5ab0e5588ab0fd74a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CorlateBlog.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CorlateBlog.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

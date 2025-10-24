@@ -1,3 +1,4 @@
+using CorlateBlog.Application;
 using CorlateBlog.Infrastructure.Data;
 using EmployeeManagmeentSystem.Infrastructure;
 
@@ -10,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 
 

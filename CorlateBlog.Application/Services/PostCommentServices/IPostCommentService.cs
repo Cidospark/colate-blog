@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CorlateBlog.Application.Services.PostComment
+namespace CorlateBlog.Application.Services.PostCommentServices
 {
     public interface IPostCommentService
     {
@@ -21,6 +21,6 @@ namespace CorlateBlog.Application.Services.PostComment
         // DELETE
         Task<ResponseObject<bool>> DeleteCommentAsync(string id);
         // GET Recent
-        Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetRecentCommentsAsync(int count);
+        Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetRecentCommentsAsync(int page, int size);
     }
 }

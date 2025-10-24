@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿
+using AutoMapper;
 using CorlateBlog.Application.Abstractions;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Request;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Response;
@@ -10,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CorlateBlog.Application.Services.PostComment
+namespace CorlateBlog.Application.Services.PostCommentServices
 {
     public class PostCommentService : IPostCommentService
     {
@@ -22,8 +23,6 @@ namespace CorlateBlog.Application.Services.PostComment
             _commentRepository = commentRepository;
             _mapper = mapper;
         }
-
-        // Simple pagination logic helper
         private int GetOffset(int page, int size)
         {
             page = page < 1 ? 1 : page;
@@ -31,128 +30,9 @@ namespace CorlateBlog.Application.Services.PostComment
             return (page - 1) * size;
         }
 
-        // POST (AddCommentAsync)
-        //public async Task<ResponseObject<PostCommentResponse>> AddCommentAsync(PostCommentRequest request)
-        //{
-        //    var commentToAdd = _mapper.Map<PostComment>(request);
-        //    await _commentRepository.AddCommentAsync(commentToAdd);
-        //    var commentToReturn = _mapper.Map<CommentResponse>(commentToAdd);
-
-        //    return new ResponseObject<CommentResponse>
-        //    {
-        //        StatusCode = 201,
-        //        Message = "Comment Created!",
-        //        Data = commentToReturn
-        //    };
-        //}
-
-        //// DELETE (DeleteCommentAsync)
-        //public async Task<ResponseObject<bool>> DeleteCommentAsync(string id)
-        //{
-        //    var res = new ResponseObject<bool>();
-        //    var comment = await _commentRepository.GetSingleCommentAsync(id);
-        //    if (comment != null)
-        //    {
-        //        await _commentRepository.DeleteCommentAsync(comment);
-        //        res.StatusCode = 200;
-        //        res.Message = "Deleted!";
-        //        res.Data = true;
-        //    }
-        //    else
-        //    {
-        //        res.StatusCode = 404;
-        //        res.Message = "Not found.";
-        //        res.Errors = new List<string> { $"Could not find comment with id: {id}" };
-        //    }
-        //    return res;
-        //}
-
-        //// GET All (Paginated)
-        //public async Task<ResponseObject<IEnumerable<CommentResponse>>> GetAllCommentsAsync(int page, int size)
-        //{
-        //    var offset = GetOffset(page, size);
-
-        //    var comments = await _commentRepository.GetAllCommentsAsync();
-        //    var paginatedComments = comments
-        //        .OrderByDescending(c => c.Id) // See note below
-        //        .Skip(offset)
-        //        .Take(size)
-        //        .Select(comment => _mapper.Map<CommentResponse>(comment))
-        //        .ToList();
-
-        //    return new ResponseObject<IEnumerable<CommentResponse>>
-        //    {
-        //        StatusCode = 200,
-        //        Message = "List of comments found",
-        //        Data = paginatedComments
-        //    };
-        //}
-
-        //// GET Recent
-        //public async Task<ResponseObject<IEnumerable<CommentResponse>>> GetRecentCommentsAsync(int count)
-        //{
-        //    var comments = await _commentRepository.GetAllCommentsAsync();
-        //    var recentComments = comments
-        //        .OrderByDescending(c => c.Id) // See note below
-        //        .Take(count)
-        //        .Select(comment => _mapper.Map<CommentResponse>(comment))
-        //        .ToList();
-
-        //    return new ResponseObject<IEnumerable<CommentResponse>>
-        //    {
-        //        StatusCode = 200,
-        //        Message = $"Found {recentComments.Count} recent comments.",
-        //        Data = recentComments
-        //    };
-        //}
-
-        //// GET by ID
-        //public async Task<ResponseObject<CommentResponse>> GetSingleCommentAsync(string commentId)
-        //{
-        //    var res = new ResponseObject<CommentResponse>();
-        //    var comment = await _commentRepository.GetSingleCommentAsync(commentId);
-        //    if (comment == null)
-        //    {
-        //        res.StatusCode = 404;
-        //        res.Message = "Not found!";
-        //        res.Errors = new List<string> { $"Could not find comment with id: {commentId}" };
-        //    }
-        //    else
-        //    {
-        //        res.StatusCode = 200;
-        //        res.Message = "Comment found.";
-        //        res.Data = _mapper.Map<CommentResponse>(comment);
-        //    }
-        //    return res;
-        //}
-
-        //// PUT (UpdateCommentAsync)
-        //public async Task<ResponseObject<CommentResponse>> UpdateCommentAsync(string id, CommentRequest request)
-        //{
-        //    var res = new ResponseObject<CommentResponse>();
-        //    var comment = await _commentRepository.GetSingleCommentAsync(id);
-        //    if (comment != null)
-        //    {
-        //        // Map properties from request onto the existing comment entity
-        //        _mapper.Map(request, comment);
-
-        //        await _commentRepository.UpdateCommentAsync(comment);
-        //        res.StatusCode = 200;
-        //        res.Message = "Updated!";
-        //        res.Data = _mapper.Map<CommentResponse>(comment);
-        //    }
-        //    else
-        //    {
-        //        res.StatusCode = 404;
-        //        res.Message = "Not found.";
-        //        res.Errors = new List<string> { $"Could not find comment with id: {id}" };
-        //    }
-        //    return res;
-        //}
-
         public async Task<ResponseObject<PostCommentResponse>> AddCommentAsync(PostCommentRequest request)
         {
-            var commentToAdd = _mapper.Map<PostCom>(request);
+            var commentToAdd = _mapper.Map<PostComment>(request);
             await _commentRepository.AddCommentAsync(commentToAdd);
             var commentToReturn = _mapper.Map<PostCommentResponse>(commentToAdd);
 
@@ -164,29 +44,126 @@ namespace CorlateBlog.Application.Services.PostComment
             };
         }
 
-        Task<ResponseObject<PostCommentResponse>> IPostCommentService.GetSingleCommentAsync(string commentId)
+        public async Task<ResponseObject<bool>> DeleteCommentAsync(string id)
         {
-            throw new NotImplementedException();
+            var res = new ResponseObject<bool>();
+            var comment = await _commentRepository.GetSingleCommentAsync(id);
+            if (comment != null)
+            {
+                await _commentRepository.DeleteCommentAsync(comment);
+                res.StatusCode = 200;
+                res.Message = "Deleted!";
+                res.Data = true;
+            }
+            else
+            {
+                res.StatusCode = 404;
+                res.Message = "Not found.";
+                res.Errors = new List<string> { $"Could not find comment with id: {id}" };
+            }
+            return res;
         }
 
-        Task<ResponseObject<IEnumerable<PostCommentResponse>>> IPostCommentService.GetAllCommentsAsync(int page, int size)
+        public async Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetAllCommentsAsync(int page, int size)
         {
-            throw new NotImplementedException();
+            var offset = GetOffset(page, size);
+
+            var comments = await _commentRepository.GetAllCommentsAsync();
+            var paginatedComments = comments
+                .OrderByDescending(c => c.Id)
+                .Skip(offset)
+                .Take(size)
+                .Select(comment => _mapper.Map<PostCommentResponse>(comment))
+                .ToList();
+
+            return new ResponseObject<IEnumerable<PostCommentResponse>>
+            {
+                StatusCode = 200,
+                Message = "List of comments found",
+                Data = paginatedComments
+            };
         }
 
-        public Task<ResponseObject<PostCommentResponse>> UpdateCommentAsync(string id, PostCommentRequest request)
+        //public async Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetRecentCommentsAsync(int count)
+        //{
+        //    var comments = await _commentRepository.GetAllCommentsAsync();
+        //    var recentComments = comments
+        //        .OrderByDescending(c => c.Id)
+        //        .Take(count)
+        //        .Select(comment => _mapper.Map<PostCommentResponse>(comment))
+        //        .ToList();
+
+        //    return new ResponseObject<IEnumerable<PostCommentResponse>>
+        //    {
+        //        StatusCode = 200,
+        //        Message = $"Found {recentComments.Count} recent comments.",
+        //        Data = recentComments
+        //    };
+        //}
+
+        public async Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetRecentCommentsAsync(int page, int size)
         {
-            throw new NotImplementedException();
+            // Re-using the pagination logic from your TodoApp
+            var offset = GetOffset(page, size);
+
+            var comments = await _commentRepository.GetAllCommentsAsync();
+            var recentComments = comments
+                .OrderByDescending(c => c.Id)
+                .Skip(offset)
+                .Take(size)
+                .Select(comment => _mapper.Map<PostCommentResponse>(comment))
+                .ToList();
+
+            return new ResponseObject<IEnumerable<PostCommentResponse>>
+            {
+                StatusCode = 200,
+                Message = "Recent comments retrieved successfully.",
+                Data = recentComments
+            };
         }
 
-        Task<ResponseObject<IEnumerable<PostCommentResponse>>> IPostCommentService.GetRecentCommentsAsync(int count)
+        public async Task<ResponseObject<PostCommentResponse>> GetSingleCommentAsync(string commentId)
         {
-            throw new NotImplementedException();
+            var res = new ResponseObject<PostCommentResponse>();
+            var comment = await _commentRepository.GetSingleCommentAsync(commentId);
+            if (comment == null)
+            {
+                res.StatusCode = 404;
+                res.Message = "Not found!";
+                res.Errors = new List<string> { $"Could not find comment with id: {commentId}" };
+            }
+            else
+            {
+                res.StatusCode = 200;
+                res.Message = "Comment found.";
+                res.Data = _mapper.Map<PostCommentResponse>(comment);
+            }
+            return res;
         }
 
-        public Task<ResponseObject<bool>> DeleteCommentAsync(string id)
+        public async Task<ResponseObject<PostCommentResponse>> UpdateCommentAsync(string id, PostCommentRequest request)
         {
-            throw new NotImplementedException();
+            var res = new ResponseObject<PostCommentResponse>();
+            var comment = await _commentRepository.GetSingleCommentAsync(id);
+            if (comment != null)
+            {
+
+                _mapper.Map(request, comment);
+
+                await _commentRepository.UpdateCommentAsync(comment);
+                res.StatusCode = 200;
+                res.Message = "Updated!";
+                res.Data = _mapper.Map<PostCommentResponse>(comment);
+            }
+            else
+            {
+                res.StatusCode = 404;
+                res.Message = "Not found.";
+                res.Errors = new List<string> { $"Could not find comment with id: {id}" };
+            }
+            return res;
         }
+
+
     }
 }
