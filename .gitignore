@@ -25,6 +25,7 @@ bld/
 **obj/
 **/[Bb]in/*
 **/[Oo]bj/*
+node_modules
 
 # .NET Core
 project.lock.json
