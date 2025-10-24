@@ -16,6 +16,5 @@ namespace CorlateBlog.Domain.Entities
         public ICollection<TagTbl> PostTags { get; set; } = [];
         public ICollection<PostComment> PostComments { get; set; } = [];
         public ICollection<PostCategoryTbl> PostCategories { get; set; } = [];
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

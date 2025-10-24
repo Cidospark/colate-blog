@@ -59,5 +59,3 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 .vs/
-
-.fake
