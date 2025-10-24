@@ -1,0 +1,252 @@
+[{   "Id": "8c01f5e0-65e1-4c33-912f-4286507dc5ab",
+    "PostText": "The art of writing maintainable unit tests with NUnit.",
+    "PostPhotoUrl": "https://picsum.photos/seed/40/800/400",
+    "PostLikesCount": 388,
+    "PostComments": [
+      {
+        "Id": "9d772650-61f7-4cc8-b683-a968f4337c23",
+        "BlogId": "8c01f5e0-65e1-4c33-912f-4286507dc5ab",
+        "Comment": "Great post!",
+        "User": "DevOpsMike",
+        "Replies": []
+      },
+      {
+        "Id": "fc401a91-e3a7-4d32-802d-c373d185e722",
+        "BlogId": "8c01f5e0-65e1-4c33-912f-4286507dc5ab",
+        "Comment": "Great post!",
+        "User": "CodeMaster",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 0,
+    "CommentCount": 2,
+    "PostTags": [
+      { "tag": "testing", "Id": "252aff95-f42d-4925-aa55-dbad2b9d5377", "BlogId": "8c01f5e0-65e1-4c33-912f-4286507dc5ab"},
+      { "tag": "nunit", "Id": "274d2465-879a-4fb8-be79-30149a142d47", "BlogId": "8c01f5e0-65e1-4c33-912f-4286507dc5ab"},
+      { "tag": "quality", "Id": "dc3df3c1-c825-4101-b8df-ebb8d823b49a", "BlogId": "8c01f5e0-65e1-4c33-912f-4286507dc5ab"}
+    ],
+    "PostCategories": [
+      {"postCategory": "Quality Assurance", "Id": "18e0a110-25fe-42c6-8ea3-ba6b232d8c23", "BlogId": "8c01f5e0-65e1-4c33-912f-4286507dc5ab"},
+      {"postCategory": "Testing", "Id": "b9de983a-77ab-4e73-ad5f-6c0d875a8ec2", "BlogId": "8c01f5e0-65e1-4c33-912f-4286507dc5ab"}
+    ]
+  },
+
+  { "Id": "67ddebb7-e7af-4053-84ed-7b08e6035f61",
+    "PostText": "Mastering C# LINQ queries for cleaner and faster code.",
+    "PostPhotoUrl": "https://picsum.photos/seed/41/800/400",
+    "PostLikesCount": 340,
+    "PostComments": [
+      { 
+        "Id": "d4b13c65-f727-4cb8-8a75-0ab03deb2e7c",
+        "BlogId": "67ddebb7-e7af-4053-84ed-7b08e6035f61",
+        "Comment": "Very helpful.",
+        "User": "BackendNinja",
+        "Replies": []
+      },
+      {
+        "Id": "174d962f-25b2-4c1f-9600-e80a3f74105e",
+        "BlogId": "67ddebb7-e7af-4053-84ed-7b08e6035f61",
+        "Comment": "Great post!",
+        "User": "CloudHero",
+        "Replies": []
+      },
+      {
+        "Id": "74dc459f-dd2a-43a7-9898-196ee64f8c5f",
+        "BlogId": "67ddebb7-e7af-4053-84ed-7b08e6035f61",
+        "Comment": "I learned a lot from this.",
+        "User": "TechGuru",
+        "Replies": [
+          {
+            "PostCommentId": "7cbc6996-98c9-4f93-8236-90d60736127f",
+            "Id": "b90c76ae-9a39-4c9d-a128-deaad7f16eb6",
+            "BlogId": "67ddebb7-e7af-4053-84ed-7b08e6035f61",
+            "Reply": "Nice point!",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 3,
+    "PostTags": [
+      {"tag": "csharp", "Id": "80e96fc9-02eb-42cd-9956-6279e6dd6421", "BlogId": "67ddebb7-e7af-4053-84ed-7b08e6035f61"},
+      {"tag": "linq",  "Id": "3e0530f2-7d88-4984-9b41-8ebdb2acd64c", "BlogId": "67ddebb7-e7af-4053-84ed-7b08e6035f61"},
+      {"tag": "dotnet",  "Id": "e3e2e734-ea85-4e1f-98fe-595aa28a3fc0", "BlogId": "67ddebb7-e7af-4053-84ed-7b08e6035f61"}
+    ],
+    "PostCategories": [
+      {"postCategory": "Programming", "Id": "23291f03-0e1d-4df6-b2f2-f4f599e151e1", "BlogId": "67ddebb7-e7af-4053-84ed-7b08e6035f61"},
+      {"postCategory": "Backend", "Id": "41cec172-6909-4d6f-9d2c-df5a906e6704", "BlogId": "67ddebb7-e7af-4053-84ed-7b08e6035f61"}
+    ]
+  },
+
+  { "Id": "c82a26ee-68e2-482a-9e8f-42cdca070bf2",
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/42/800/400",
+    "PostLikesCount": 812,
+    "PostComments": [
+      { 
+        "Id": "bec31dab-73a3-48c8-9352-09920c459e42",
+        "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2",
+        "Comment": "Great post!",
+        "User": "BackendNinja",
+        "Replies": [
+          {
+            "PostCommentId": "f2f84abd-db2b-44ff-9747-9c534cc9ecf6",
+            "Id": "4acffbd8-e90c-4283-b24e-73dd3fcfcc18",
+            "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2",
+            "Reply": "Nice point!",
+            "User": "Engineer"
+          },
+          {
+            "PostCommentId": "e67c3d90-d4c3-48e1-9492-55f4ac7bc7fa",
+            "Id": "9dceafdc-34be-488e-9f3a-8a5bdc6b7d4a",
+            "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2",
+            "Reply": "Nice point!",
+            "User": "SeniorDev"
+          }
+        ]
+      },
+      {
+        "Id": "8f63090d-c4cd-4a4b-9e0f-673d14e36f1e",
+        "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2",
+        "Comment": "Very helpful.",
+        "User": "BackendNinja",
+        "Replies": []
+      },
+      {
+        "Id": "400b5d1e-0dca-4a98-8489-d70652fc58fb",
+        "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2",
+        "Comment": "Can you elaborate on this part?",
+        "User": "DataNerd",
+        "Replies": [
+          {
+            "PostCommentId": "3a7a512e-7062-4562-8e32-90bd96d145a4",
+            "Id": "8ea36495-30e5-4bfd-8476-3d970370e8b8",
+            "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2",
+            "Reply": "Thanks for explaining.",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 3,
+    "CommentCount": 3,
+    "PostTags": [
+      {"tag": "dotnet", "Id": "fc992ea6-3f76-4903-8bc9-318515fe5344", "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2"},
+      {"tag": "clean-architecture", "Id": "a687eccb-f802-4b4d-b487-4ced8ffe1a2d", "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2"},
+      {"tag": "software-design", "Id": "970f10c2-a29c-43ff-8f13-1cdadb9f0517", "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2"}
+    ],
+    "PostCategories": [
+      {"postCategory": "Programming", "Id": "4cf42f74-d2b5-4926-978f-489e5f531ca5", "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2"},
+      {"postCategory": "Backend", "Id": "4027c00c-2e40-48d7-b8be-95adf3fe8781", "BlogId": "c82a26ee-68e2-482a-9e8f-42cdca070bf2"}
+    ]
+  },
+
+  { "Id": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5",
+    "PostText": "Exploring the beauty of clean architecture in modern .NET applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/43/800/400",
+    "PostLikesCount": 523,
+    "PostComments": [
+      {
+        
+        "Id": "607033a9-bbac-4048-83de-da40fc26e773",
+        "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5",
+        "Comment": "I learned a lot from this.",
+        "User": "AIDev",
+        "Replies": [
+          {
+            "PostCommentId": "7b8aa706-308a-408e-9bb1-4639e38ee6af",
+            "Id": "4e5e1c44-4aa2-411b-9eae-2151301143e3",
+            "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5",
+            "Reply": "Nice point!",
+            "User": "CodeReviewer"
+          },
+          {
+            "PostCommentId": "55cea9aa-455a-4e0b-8451-8397362d49ca",
+            "Id": "f931966d-c99e-4fe8-a3bf-0e2e366a27b6",
+            "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5",
+            "Reply": "Nice point!",
+            "User": "CodeReviewer"
+          }
+        ]
+      },
+      {
+        
+        "Id": "78ab8242-bc71-4aec-ac59-5e5e6a3ee47d",
+        "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5",
+        "Comment": "Can you elaborate on this part?",
+        "User": "CodeMaster",
+        "Replies": [
+          {
+            "PostCommentId": "e144d944-c20f-46d7-9a09-d970e4dc50e0",
+            "Id": "2ffa3678-3293-4861-a423-3f8d7801d0f8",
+            "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5",
+            "Reply": "This helped me too.",
+            "User": "SeniorDev"
+          },
+          {
+            "PostCommentId": "87e6f076-a545-4864-b254-961adf59f07c",
+            "Id": "7c1ec850-3608-46cd-9621-1b060ed142a7",
+            "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5",
+            "Reply": "Nice point!",
+            "User": "Author"
+          }
+        ]
+      },
+      {
+        
+        "Id": "7e52865b-a765-4790-81a3-af1f7e437c5f",
+        "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5",
+        "Comment": "Very helpful.",
+        "User": "DataNerd",
+        "Replies": []
+      }
+    ],
+    "CommentsReplies": 4,
+    "CommentCount": 3,
+    "PostTags": [
+      {"tag": "dotnet",  "Id": "5a12f82a-00b7-4ade-83fa-fee3d01695ea", "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5"},
+      {"tag": "clean-architecture",  "Id": "30ab861c-b9ff-494d-91e8-962d45ab75ea", "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5"},
+      {"tag": "software-design", "Id": "0704d72f-8884-4109-bcb8-debd092ef3cb", "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5"}
+    ],
+    "PostCategories": [
+      {"postCategory": "Programming",  "Id": "f38f5f45-85c4-4423-ab3b-ee199f60d042", "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5"},
+      {"postCategory": "Backend", "Id": "9342f020-3c2f-441b-925e-c5fa6e2edd6a", "BlogId": "798df8cd-899b-4568-9abb-4b5a4aa6bfd5"}
+    ]
+  },
+
+  {
+    "Id": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d",
+    "PostText": "Understanding event sourcing in CQRS-based applications.",
+    "PostPhotoUrl": "https://picsum.photos/seed/44/800/400",
+    "PostLikesCount": 457,
+    "PostComments": [
+      {
+        "Id": "b6c754ab-a1ef-4c40-9d2d-255bdbfd364e",
+        "BlogId": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d",
+        "Comment": "I learned a lot from this.",
+        "User": "AIDev",
+        "Replies": [
+          {
+            "PostCommentId": "283462ba-69f5-41ff-ad19-932929fd14fd",
+            "Id": "c965c665-6a83-4119-8eb9-f148904f86dc",
+            "BlogId": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d",
+            "Reply": "I agree completely.",
+            "User": "SeniorDev"
+          }
+        ]
+      }
+    ],
+    "CommentsReplies": 1,
+    "CommentCount": 1,
+    "PostTags": [
+      {"tag": "cqrs", "Id": "36e5e652-f23e-408a-88f7-feca84aacbf4", "BlogId": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d"},
+      {"tag": "event-sourcing", "Id": "d240a0a7-ebd1-47fc-abbf-0eeb5227296d", "BlogId": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d"},
+      {"tag": "ddd", "Id": "cd4b2fef-25ae-4393-a559-89a7755e0dc8", "BlogId": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d"}
+    ],
+    "PostCategories": [
+      {"postCategory": "Architecture", "Id": "d9e7a01a-f6af-4bbc-992d-31bff38f27a1", "BlogId": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d"},
+      {"postCategory": "Backend", "Id": "fa4c6d08-f3b5-4513-b491-4c33d1287821", "BlogId": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d"}
+    ]
+  }
+]
