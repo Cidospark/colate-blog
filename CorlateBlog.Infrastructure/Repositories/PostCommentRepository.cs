@@ -42,12 +42,10 @@ namespace CorlateBlog.Infrastructure.Repositories
             return await _context.PostComments.FirstOrDefaultAsync(c => c.Id == commentId);
         }
 
-            public async Task UpdateCommentAsync(PostComment comment)
-            {
-                _context.PostComments.Update(comment);
-                await _context.SaveChangesAsync();
-            }
+        public async Task UpdateCommentAsync(PostComment comment)
+        {
+            _context.PostComments.Update(comment);
+            await _context.SaveChangesAsync();
         }
     }
-}
 }
