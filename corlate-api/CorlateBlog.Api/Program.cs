@@ -35,8 +35,8 @@ app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
 {
-    var services = scope.ServiceProvider;
-    await Seeder.SeedMe(services);
+    //var services = scope.ServiceProvider;
+    //await Seeder.SeedMe(services);
 }
 
 app.Run();
