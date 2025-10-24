@@ -1,8 +1,11 @@
+using AutoMapper;
+using CorlateBlog.Application.DTOs.PostCommentDTOs.Request;
+using CorlateBlog.Application.DTOs.PostCommentDTOs.Response;
+using CorlateBlog.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AutoMapper;
 
 namespace TodoApp.Application.Mappers
 {
@@ -10,6 +13,13 @@ namespace TodoApp.Application.Mappers
     {
         public CorlateBlogMappingProfile()
         {
+
+
+
+            // POST COMMENT
+            CreateMap<PostCommentRequest, PostComment>();
+
+            CreateMap<PostComment, PostCommentResponse>();
         }
     }
 }
