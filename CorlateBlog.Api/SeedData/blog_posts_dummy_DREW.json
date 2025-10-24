@@ -1,4 +1,4 @@
-{   "Id": "8c01f5e0-65e1-4c33-912f-4286507dc5ab",
+[{   "Id": "8c01f5e0-65e1-4c33-912f-4286507dc5ab",
     "PostText": "The art of writing maintainable unit tests with NUnit.",
     "PostPhotoUrl": "https://picsum.photos/seed/40/800/400",
     "PostLikesCount": 388,
@@ -248,8 +248,8 @@
       {"postCategory": "Architecture", "Id": "d9e7a01a-f6af-4bbc-992d-31bff38f27a1", "BlogId": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d"},
       {"postCategory": "Backend", "Id": "fa4c6d08-f3b5-4513-b491-4c33d1287821", "BlogId": "ebdc6ae2-9626-4e86-bbf5-2cb30d19c08d"}
     ]
-  },
-
+  }
+]
 
 
 
