@@ -2,6 +2,7 @@
 using CorlateBlog.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -10,9 +11,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CorlateBlog.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(CorlateBlogDbContext))]
-    partial class CorlateBlogDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251024133233_AddTitle")]
+    partial class AddTitle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -41,6 +44,9 @@ namespace CorlateBlog.Infrastructure.Data.Migrations
 
                     b.Property<string>("PostText")
                         .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PostTitle")
                         .HasColumnType("text");
 
                     b.HasKey("Id");

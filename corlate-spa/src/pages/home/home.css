@@ -20,4 +20,11 @@
     .left-side, .right-side {
         border: 1px solid #ccc;
     }
+
+    .commentreply-section {
+        margin-top: 2rem;
+        padding: 0 0.8rem;
+        width: 80%;
+        background: red;
+    }
 }
