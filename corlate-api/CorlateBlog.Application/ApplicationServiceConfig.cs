@@ -1,15 +1,11 @@
-
-﻿using CorlateBlog.Application.Services.PostCommentServices;
+using CorlateBlog.Application.Services.PostCommentServices;
 using CorlateBlog.Application.Services.TagService;
-
-﻿using CorlateBlog.Application.Services.PostBlogServices;
-
+using CorlateBlog.Application.Services.PostBlogServices;
 using CorlateBlog.Application.Services.Gallery;
 using CorlateBlog.Application.Services;
-
 using CorlateBlog.Application.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
-using TodoApp.Application.Mappers;
+using CorlateBlog.Application.Mappers;
 
 namespace CorlateBlog.Application
 {
@@ -21,6 +17,7 @@ namespace CorlateBlog.Application
 
             services.AddScoped<ITagService, TagService>();
 
+            services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IBlogService, BlogService>();
 
 
