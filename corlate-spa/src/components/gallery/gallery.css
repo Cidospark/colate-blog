@@ -1,0 +1,60 @@
+.gallery-container {
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery-container h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* fixed 3 per row */
+  gap: 2px;
+  justify-items: center;
+  margin-bottom: 0.3rem; /* brings button closer */
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.view-more-btn {
+  background-color: darkred;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 0.2rem; /* minimal space above */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #a61c1c;
+  transform: scale(1.03); /* subtle hover pop */
+}
