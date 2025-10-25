@@ -1,6 +1,7 @@
 import './home.css';
 
 import BlogCard from '../../components/blog/blog-card';
+import CategorySidebar from '../../components/category/CategorySidebar';
 
 function Home() {
 	return (
@@ -20,8 +21,10 @@ function Home() {
 					likes={29}
 					comments={12}
 				/>
+			<div className='right-side'>
+			<CategorySidebar />
+			</div>
 
-				<div className='right-side'>Right side</div>
 			</div>
 		</div>
 	);
