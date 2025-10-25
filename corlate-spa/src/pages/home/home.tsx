@@ -1,3 +1,6 @@
+// import PostCommentList from "../../components/PostComment/PostCommentList/PostCommentList";
+import SingleCommentPage from "../../components/PostComment/SingleCommentPage/SingleCommentPage";
+// import PostCommentDetailPage from "../../components/PostComment/SingleCommentPage/SingleCommentPage";
 import "./home.css"
 
 function Home(){
@@ -7,7 +10,7 @@ function Home(){
             <div>A simple blog built by devs in training.</div>
         </div>
         <div className="main-area">
-            <div className="left-side">Left side</div>
+            <div className="left-side">{<SingleCommentPage />}</div>
             <div className="right-side">Right side</div>
         </div>
     </div>
