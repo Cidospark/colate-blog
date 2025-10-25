@@ -1,9 +1,7 @@
 import React from 'react';
-// import { CommentResponse } from '../types/api';
-import './PostCommentCard.css'; // Import the CSS
+import './PostCommentCard.css';
 import type { CommentResponse } from '../models/postCommentModels';
 
-// The component receives the comment data as a prop
 interface CommentCardProps {
   comment: CommentResponse;
 }
@@ -17,9 +15,6 @@ const CommentCard: React.FC<CommentCardProps> = ({ comment }) => {
       <div className="comment-card-body">
         <p>{comment.comment}</p>
       </div>
-      {/* <footer className="comment-card-footer">
-        {/* <small>Comment ID: {comment.id} | Blog ID: {comment.blogId}</small> */}
-      {/* </footer> */} 
     </article>
   );
 };
