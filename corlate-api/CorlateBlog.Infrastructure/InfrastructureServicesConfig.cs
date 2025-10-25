@@ -16,6 +16,7 @@ namespace EmployeeManagmeentSystem.Infrastructure
 
 
             services.AddScoped<IPostCommentRepository, PostCommentRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IBlogRepository, BlogRepository>();
 
 
