@@ -10,5 +10,6 @@ namespace CorlateBlog.Application.DTOs.Gallery
     {
         public string Id { get; set; } = "";
         public string PostPhotoUrl { get; set; } = "";
+        
     }
 }

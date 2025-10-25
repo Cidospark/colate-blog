@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CorlateBlog.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class GalleryController : ControllerBase
     {
@@ -15,32 +15,15 @@ namespace CorlateBlog.Api.Controllers
             _galleryService = galleryService;
         }
 
-        [HttpGet("featured-photos")]
-        public async Task<IActionResult> GetFeaturedPhotosAsync()
+        [HttpGet("photos")]
+        public async Task<IActionResult> GetPhotosAsync([FromQuery] int? page, [FromQuery] int? size)
         {
-            var response = await _galleryService.GetAllPhotosAsync(page: 1, size: 6);
+            // ✅ Default to featured if no pagination values provided
+            int currentPage = page ?? 1;
+            int pageSize = size ?? 6;  // 6 = featured, if not specified
+
+            var response = await _galleryService.GetAllPhotosAsync(currentPage, pageSize);
             return StatusCode(response.StatusCode, response);
         }
-
-
-        [HttpGet("all-photos")]
-        public async Task<IActionResult> GetAllPhotosAsync([FromQuery] int page = 1, [FromQuery] int size = 12)
-        {
-            var response = await _galleryService.GetAllPhotosAsync(page, size);
-            return StatusCode(response.StatusCode, response);
-        }
-
-        //[HttpGet]
-        //public async Task<IActionResult> GetPhotos([FromQuery] int page = 0, [FromQuery] int size = 0)
-        //{
-        //    if (page <= 0 || size <= 0)
-        //    {
-        //        var response = await _galleryService.GetAllPhotosAsync(1, 6);
-        //        return StatusCode(response.StatusCode, response);
-        //    }
-
-        //    var pagedResponse = await _galleryService.GetAllPhotosAsync(page, size);
-        //    return StatusCode(pagedResponse.StatusCode, pagedResponse);
-        //}
     }
 }

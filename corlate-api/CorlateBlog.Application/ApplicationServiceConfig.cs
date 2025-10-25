@@ -1,4 +1,5 @@
-﻿using CorlateBlog.Application.Services.PostCommentServices;
+﻿using CorlateBlog.Application.Services.Gallery;
+using CorlateBlog.Application.Services.PostCommentServices;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace CorlateBlog.Application
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IPostCommentService, PostCommentService>();
+            services.AddScoped<IGalleryService, GalleryService>();
 
             services.AddAutoMapper(typeof(CorlateBlogMappingProfile));
 

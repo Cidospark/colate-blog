@@ -1,4 +1,5 @@
 using AutoMapper;
+using CorlateBlog.Application.DTOs.Gallery;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Request;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Response;
 using CorlateBlog.Domain.Entities;
@@ -20,6 +21,9 @@ namespace TodoApp.Application.Mappers
             CreateMap<PostCommentRequest, PostComment>();
 
             CreateMap<PostComment, PostCommentResponse>();
+
+            //Gallery
+            CreateMap<GalleryResponse, Blog>().ReverseMap();
         }
     }
 }

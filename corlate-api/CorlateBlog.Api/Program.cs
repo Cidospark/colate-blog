@@ -13,6 +13,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
+builder.Services.AddCors(options => 
+    options.AddPolicy("MyCorsPolicy", policy => 
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
 
 
 var app = builder.Build();
@@ -26,6 +29,7 @@ if (app.Environment.IsDevelopment())
 app.UseSwagger();
 app.UseSwaggerUI();
 
+app.UseCors("MyCorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();
