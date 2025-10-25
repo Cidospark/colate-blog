@@ -1,6 +1,7 @@
 import './home.css';
 
 import BlogCard from '../../components/blog/blog-card';
+import BlogSearch from '../../components/blog/blog-search';
 
 function Home() {
 	return (
@@ -21,7 +22,10 @@ function Home() {
 					comments={12}
 				/>
 
-				<div className='right-side'>Right side</div>
+				<div className='right-side'>
+					{/* Search Component in Right Sidebar */}
+					<BlogSearch />
+				</div>
 			</div>
 		</div>
 	);
