@@ -2,13 +2,12 @@ namespace CorlateBlog.Application.DTOs.Response
 {
     public class BlogSearchResponse
     {
-        public string Id { get; set; } = string.Empty;
-        public string PostText { get; set; } = string.Empty;
-        public string PostPhotoUrl { get; set; } = string.Empty;
-        public int PostLikesCount { get; set; }
-        public int CommentsReplies { get; set; }
-        public int CommentCount { get; set; }
-        public List<string> PostTags { get; set; } = new();
-        public List<string> PostCategories { get; set; } = new();
+        public List<BlogSearchItemDto> Data { get; set; } = new();
+        public int CurrentPage { get; set; }
+        public int PageSize { get; set; }
+        public int TotalCount { get; set; }
+        public int TotalPages { get; set; }
+        public bool HasPrevious => CurrentPage > 1;
+        public bool HasNext => CurrentPage < TotalPages;
     }
 }
