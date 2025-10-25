@@ -10,6 +10,7 @@ function Home() {
 				<div>A simple blog built by devs in training.</div>
 			</div>
 			<div className='main-area'>
+				<div className="left-side">
 				<BlogCard
 					postedAt='07 Nov'
 					postedBy='CEN Smart'
@@ -20,10 +21,11 @@ function Home() {
 					likes={29}
 					comments={12}
 				/>
-
+			</div>
 				<div className='right-side'>Right side</div>
 			</div>
 		</div>
+	
 	);
 }
 
