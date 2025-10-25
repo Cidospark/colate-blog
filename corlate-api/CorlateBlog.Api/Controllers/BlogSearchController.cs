@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CorlateBlog.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     public class BlogSearchController : ControllerBase
     {
         private readonly IBlogSearchService _blogSearchService;

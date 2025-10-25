@@ -2,24 +2,25 @@ using CorlateBlog.Application.DTOs.Response;
 using CorlateBlog.Application.DTOs.Request;
 using CorlateBlog.Application.Interfaces;
 using CorlateBlog.Application.Repositories;
+using CorlateBlog.Application.Abstractions;
+using Microsoft.EntityFrameworkCore;
 
 namespace CorlateBlog.Application.Services
 {
     public class BlogSearchService : IBlogSearchService
     {
-        private readonly IBlogRepository _blogRepository;
+        private readonly IBlogSearchRepository _blogSearchRepository;
 
-        public BlogSearchService(IBlogRepository blogRepository)
+        public BlogSearchService(IBlogSearchRepository blogSearchRepository)
         {
-            _blogRepository = blogRepository;
+            _blogSearchRepository = blogSearchRepository;
         }
 
         public async Task<List<BlogSearchResponse>> SearchBlogsAsync(BlogSearchRequest request)
         {
-            var allBlogs = await _blogRepository.GetAllBlogsAsync();
-            var query = allBlogs.AsQueryable();
+            var query = _blogSearchRepository.GetBlogsForSearch();
 
-            // Filter by search term (searches in post text)
+            // Filter by search term (searches in post text, tags, and categories)
             if (!string.IsNullOrWhiteSpace(request.SearchTerm))
             {
                 var searchTerm = request.SearchTerm.ToLower();
@@ -48,14 +49,18 @@ namespace CorlateBlog.Application.Services
                 );
             }
 
-            var totalCount = query.Count();
+            // Get total count before pagination
+            var totalCount = await query.CountAsync();
             var totalPages = (int)Math.Ceiling(totalCount / (double)request.PageSize);
 
-            // Apply pagination
-            var pagedBlogs = query
-                .Skip((request.PageNumber - 1) * request.PageSize)
+            // Calculate offset using PaginationHelper
+            var offset = PaginationHelper.GetOffset(request.PageNumber, request.PageSize);
+
+            // Apply pagination and execute query
+            var blogs = await query
+                .Skip(offset)
                 .Take(request.PageSize)
-                .Select(b => new BlogSearchResponse
+                .Select(b => new BlogSearchItemDto
                 {
                     Id = b.Id,
                     PostText = b.PostText,
@@ -66,9 +71,16 @@ namespace CorlateBlog.Application.Services
                     PostTags = b.PostTags.Select(t => t.Tag).ToList(),
                     PostCategories = b.PostCategories.Select(c => c.PostCategory).ToList()
                 })
-                .ToList();
+                .ToListAsync();
 
-            return pagedBlogs;
+            return new BlogSearchResponse
+            {
+                Data = blogs,
+                CurrentPage = request.PageNumber,
+                PageSize = request.PageSize,
+                TotalCount = totalCount,
+                TotalPages = totalPages
+            };
         }
     }
 }
