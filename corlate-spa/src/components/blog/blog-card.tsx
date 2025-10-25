@@ -82,7 +82,7 @@ export default function BlogCard({
 				<p className='mb-6 text-gray-700 leading-relaxed'>{description}</p>
 
 				{/* Button */}
-				<Button className='bg-rose-700 hover:bg-rose-700/90 dark:bg-rose-700 dark:hover:bg-rose-700/90 focus-visible:ring-rose-700/40 dark:focus-visible:ring-rose-700/40 font-medium text-white'>
+				<Button className='bg-rose-700 hover:bg-rose-700/90 dark:bg-rose-700 dark:hover:bg-rose-700/90 focus-visible:ring-rose-700/40 dark:focus-visible:ring-rose-700/40 font-medium text-white cursor-pointer'>
 					Read More <ChevronRight size={16} />
 				</Button>
 			</CardContent>
