@@ -1,0 +1,130 @@
+/* TagCloud.css - sidebar style for Tag Cloud */
+
+.tagcloud-sidebar {
+    width: 100%;
+    max-width: 280px; /* match sidebar width */
+    box-sizing: border-box;
+}
+
+.tagcloud-card {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 14px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.tagcloud-heading {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: 0.2px;
+}
+
+/* tags container */
+.tagcloud-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+/* tag pill */
+.tagcloud-item {
+    display: inline-block;
+    background-color: #f3f3f3;
+    color: #333;
+    border: none;
+    padding: 6px 10px;
+    font-size: 0.82rem;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.12s ease, background-color 0.12s ease;
+}
+
+    .tagcloud-item:hover {
+        transform: translateY(-1px);
+        background-color: #dcdcdc;
+    }
+
+/* footer row */
+.tagcloud-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.tagcloud-seemore {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    font-size: 0.82rem;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+    .tagcloud-seemore:disabled {
+        background-color: #c9c9c9;
+        cursor: not-allowed;
+    }
+
+.tagcloud-total {
+    margin-left: auto;
+    font-size: 0.82rem;
+    color: #666;
+}
+
+/* small helper styles */
+.tagcloud-loading {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.tagcloud-error {
+    color: #b00020;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.tagcloud-no {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+
+
+.right-side {
+    position: relative; 
+}
+
+    
+    .right-side .tagcloud-sidebar {
+        position: absolute;
+        left: 12px; /* distance from left edge of right column — tweak if needed */
+        bottom: 300px; /* distance from bottom edge of right column */
+        width: calc(100% - 24px); 
+        max-width: 260px; 
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    
+    .right-side .tagcloud-card {
+        width: 100%;
+    }
+
+
+@media (max-width: 880px) {
+    .right-side .tagcloud-sidebar {
+        position: static; 
+        width: 100%;
+        max-width: none;
+        margin-top: 12px;
+    }
+}
+

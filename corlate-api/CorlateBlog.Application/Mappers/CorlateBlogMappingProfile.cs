@@ -14,16 +14,20 @@ namespace TodoApp.Application.Mappers
         public CorlateBlogMappingProfile()
         {
             // POST COMMENT
-            CreateMap<PostCommentRequest, PostComment>();
-            CreateMap<PostComment, PostCommentResponse>();
+            CreateMap<PostCommentRequest, PostComment>().ReverseMap();
+            CreateMap<PostComment, PostCommentResponse>().ReverseMap();
+
             // Tag
-            CreateMap<TagTblRequest, TagTbl>();
-            CreateMap<TagTbl, TagTblResponse>();
-            CreateMap<TagTblRequest, TagTbl>();
-            CreateMap<TagTbl, TagTblResponse>();
+            CreateMap<TagTblRequest, TagTbl>().ReverseMap();
+            CreateMap<TagTbl, TagTblResponse>().ReverseMap();
+
+            CreateMap<TagTblRequest, TagTbl>().ReverseMap();
+            CreateMap<TagTbl, TagTblResponse>().ReverseMap();
+
             // BLOG
-            CreateMap<BlogRequest, Blog>();
-            CreateMap<Blog, BlogResponse>();
+            CreateMap<BlogRequest, Blog>().ReverseMap();
+            CreateMap<Blog, BlogResponse>().ReverseMap();
+
 
             // Gallery
             CreateMap<GalleryResponse, Blog>().ReverseMap();

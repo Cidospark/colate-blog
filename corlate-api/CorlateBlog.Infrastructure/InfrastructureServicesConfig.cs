@@ -15,6 +15,17 @@ namespace EmployeeManagmeentSystem.Infrastructure
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IPostCommentRepository, PostCommentRepository>();
+
+
+            services.AddScoped<ITagRepository, TagRepository>();
+
+            services.AddScoped<IBlogRepository, BlogRepository>();
+
+
+            services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<IBlogRepository, BlogRepository>();
+
+
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<IBlogRepository, BlogRepository>();
             services.AddScoped<IGalleryRepository, GalleryRepository>();
