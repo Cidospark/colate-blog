@@ -16,16 +16,16 @@ namespace EmployeeManagmeentSystem.Infrastructure
 
 
             services.AddScoped<IPostCommentRepository, PostCommentRepository>();
-<<<<<<< HEAD
+
 
             services.AddScoped<ITagRepository, TagRepository>();
 
             services.AddScoped<IBlogRepository, BlogRepository>();
 
-=======
+
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<IBlogRepository, BlogRepository>();
->>>>>>> develop
+
 
 
             return services;
