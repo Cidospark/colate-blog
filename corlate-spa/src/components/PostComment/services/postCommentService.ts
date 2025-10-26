@@ -1,21 +1,15 @@
-// import { ApiResponse, CommentResponse } from "../types/api";
-
 import type { ApiResponse, CommentResponse } from "../models/postCommentModels";
+import { API_BASE_URL } from "./apiBase";
 
-// API base URL from your Swagger UI
-export const API_BASE_URL = "http://localhost:5086";
-
-/**
- * Fetches a paginated list of all comments from the API.
- *
- */
-export const getAllComments = async (
-  page: number = 2,
-  size: number = 1
+export const getCommentsByBlogId = async (
+  blogId: string,
+  page: number = 1,
+  size: number = 10
 ): Promise<ApiResponse<CommentResponse[]>> => {
-  // Call the "getAll" endpoint with pagination
+  
+  // Calls your new endpoint: /comment/blog/{blogId}
   const response = await fetch(
-    `${API_BASE_URL}/comment?page=${page}&size=${size}`
+    `${API_BASE_URL}/comment/blog/${blogId}?page=${page}&size=${size}`
   );
 
   if (!response.ok) {
@@ -27,7 +21,6 @@ export const getAllComments = async (
     }
   }
 
-  // The data type is an array: CommentResponse[]
   const result: ApiResponse<CommentResponse[]> = await response.json();
 
   if (result.statusCode !== 200 || !result.data) {

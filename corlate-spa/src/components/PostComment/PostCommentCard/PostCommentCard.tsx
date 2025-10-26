@@ -1,9 +1,8 @@
 import React from 'react';
-// import { CommentResponse } from '../types/api';
-import './PostCommentCard.css'; // Import the CSS
+import './PostCommentCard.css'; 
 import type { CommentResponse } from '../models/postCommentModels';
+import { User } from 'lucide-react';
 
-// The component receives the comment data as a prop
 interface CommentCardProps {
   comment: CommentResponse;
 }
@@ -12,14 +11,12 @@ const CommentCard: React.FC<CommentCardProps> = ({ comment }) => {
   return (
     <article className="comment-card">
       <header className="comment-card-header">
-        <p>Comment from: {comment.user}</p>
+        <User size={16} className="comment-user-icon" />
+        <h3>{comment.user}</h3>
       </header>
       <div className="comment-card-body">
         <p>{comment.comment}</p>
       </div>
-      {/* <footer className="comment-card-footer">
-        {/* <small>Comment ID: {comment.id} | Blog ID: {comment.blogId}</small> */}
-      {/* </footer> */} 
     </article>
   );
 };
