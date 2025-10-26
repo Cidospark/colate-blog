@@ -64,7 +64,6 @@ export default function BlogDetails() {
 			/>
 
 			<div className="comments-section" style={{ marginTop: '40px' }}>
-                <h2 className="text-2xl font-bold mb-4"> Comments</h2>
                 {id && <PostCommentList blogId={id} />}
                 
             </div>

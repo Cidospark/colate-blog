@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import type { CommentResponse } from '../models/postCommentModels';
 import { getCommentsByBlogId } from '../services/postCommentService';
 import CommentCard from '../PostCommentCard/PostCommentCard';
+import './PostCommentList.css';
 
 interface CommentListProps {
   blogId: string;
@@ -56,6 +57,11 @@ const PostCommentList: React.FC<CommentListProps> = ({ blogId }) => {
 
   return (
     <div className="comment-list">
+
+        <h3 className="comment-count-header">
+        {comments.length} {comments.length === 1 ? 'Comment' : 'Comments'}
+      </h3>
+
       {comments.length > 0 ? (
         comments.map((comment) => (
           <CommentCard key={comment.id} comment={comment} />
