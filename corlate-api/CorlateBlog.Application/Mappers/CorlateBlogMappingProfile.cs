@@ -3,6 +3,7 @@ using CorlateBlog.Application.DTOs.BlogDTO.Request;
 using CorlateBlog.Application.DTOs.BlogDTO.Response;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Request;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Response;
+using CorlateBlog.Application.DTOs.TagDTOs;
 using CorlateBlog.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -22,11 +23,17 @@ namespace TodoApp.Application.Mappers
             CreateMap<PostCommentRequest, PostComment>();
 
             CreateMap<PostComment, PostCommentResponse>();
+<<<<<<< HEAD
+            CreateMap<TagTblRequest, TagTbl>();
+
+            CreateMap<TagTbl, TagTblResponse>();
+=======
 
             // BLOG
             CreateMap<BlogRequest, Blog>();
 
             CreateMap<Blog, BlogResponse>();
+>>>>>>> develop
         }
     }
 }
