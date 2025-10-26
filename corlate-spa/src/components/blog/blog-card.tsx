@@ -1,10 +1,11 @@
-import { Card, CardContent } from '../ui/card';
 import { ChevronRight, Heart, MessageCircle, User } from 'lucide-react';
+import { Card, CardContent } from '../ui/card';
 
-import { Button } from '../ui/button';
+import { Link } from 'react-router-dom';
 import { cn } from '../../lib/utils';
 
 type Props = React.ComponentPropsWithRef<'div'> & {
+	id: string;
 	postedAt: string;
 	postedBy: string;
 	comments?: number;
@@ -13,9 +14,11 @@ type Props = React.ComponentPropsWithRef<'div'> & {
 	description: string;
 	image: string;
 	imageAlt: string;
+	hasReadMoreButton?: boolean;
 };
 
 export default function BlogCard({
+	id,
 	postedAt,
 	postedBy,
 	comments,
@@ -25,6 +28,7 @@ export default function BlogCard({
 	image,
 	imageAlt,
 	className,
+	hasReadMoreButton,
 	...props
 }: Readonly<Props>) {
 	return (
@@ -82,9 +86,13 @@ export default function BlogCard({
 				<p className='mb-6 text-gray-700 leading-relaxed'>{description}</p>
 
 				{/* Button */}
-				<Button className='bg-rose-700 hover:bg-rose-700/90 dark:bg-rose-700 dark:hover:bg-rose-700/90 focus-visible:ring-rose-700/40 dark:focus-visible:ring-rose-700/40 font-medium text-white'>
-					Read More <ChevronRight size={16} />
-				</Button>
+				{hasReadMoreButton && (
+					<Link
+						to={`/blog/${id}`}
+						className='flex items-center gap-2 bg-rose-700 hover:bg-rose-700/90 px-4 py-1 border border-rose-700 rounded w-fit text-white'>
+						Read More <ChevronRight size={16} />
+					</Link>
+				)}
 			</CardContent>
 		</Card>
 	);
