@@ -18,9 +18,6 @@ namespace EmployeeManagmeentSystem.Infrastructure
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<IBlogRepository, BlogRepository>();
             services.AddScoped<IGalleryRepository, GalleryRepository>();
-
-            services.AddScoped<ITagRepository, TagRepository>();
-            services.AddScoped<IBlogRepository, BlogRepository>();
             services.AddScoped<IBlogSearchRepository, BlogSearchRepository>();
 
             return services;

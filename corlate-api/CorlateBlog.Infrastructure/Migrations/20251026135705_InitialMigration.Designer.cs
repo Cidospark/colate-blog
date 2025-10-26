@@ -8,11 +8,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace CorlateBlog.Infrastructure.Data.Migrations
+namespace CorlateBlog.Infrastructure.Migrations
 {
     [DbContext(typeof(CorlateBlogDbContext))]
-    [Migration("20251023092427_Initial")]
-    partial class Initial
+    [Migration("20251026135705_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
