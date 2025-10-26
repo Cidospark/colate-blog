@@ -31,9 +31,9 @@ namespace CorlateBlog.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int size = 10)
+        public async Task<IActionResult> GetAll()
         {
-            var list = await _replyService.GetAllAsync(page, size);
+            var list = await _replyService.GetAllAsync();
 
             var response = new ResponseObject<IEnumerable<ReplyResponse>>
             {

@@ -1,4 +1,8 @@
-import type { ApiResponse, CommentResponse } from "../models/postCommentModels";
+import type {
+  ApiResponse,
+  CommentResponse,
+  ReplyResponse,
+} from "../models/postCommentModels";
 import { API_BASE_URL } from "./apiBase";
 
 export const getCommentsByBlogId = async (
@@ -6,8 +10,6 @@ export const getCommentsByBlogId = async (
   page: number = 1,
   size: number = 10
 ): Promise<ApiResponse<CommentResponse[]>> => {
-  
-  // Calls your new endpoint: /comment/blog/{blogId}
   const response = await fetch(
     `${API_BASE_URL}/comment/blog/${blogId}?page=${page}&size=${size}`
   );
@@ -25,6 +27,29 @@ export const getCommentsByBlogId = async (
 
   if (result.statusCode !== 200 || !result.data) {
     throw new Error(result.message || "Comments not found");
+  }
+
+  return result;
+};
+
+export const getRepliesByBlogId = async (
+  blogId: string
+): Promise<ApiResponse<ReplyResponse[]>> => {
+  const response = await fetch(`${API_BASE_URL}/api/Reply?blogId=${blogId}`);
+
+  if (!response.ok) {
+    try {
+      const errorData: ApiResponse<null> = await response.json();
+      throw new Error(errorData.message || "Failed to fetch replies");
+    } catch {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+  }
+
+  const result: ApiResponse<ReplyResponse[]> = await response.json();
+
+  if (result.statusCode !== 200 || !result.data) {
+    return { ...result, data: [] } as ApiResponse<ReplyResponse[]>;
   }
 
   return result;

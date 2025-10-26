@@ -29,9 +29,9 @@ namespace CorlateBlog.Application.Services
             return _mapper.Map<ReplyResponse>(created);
         }
 
-        public async Task<IEnumerable<ReplyResponse>> GetAllAsync(int page, int size)
+        public async Task<IEnumerable<ReplyResponse>> GetAllAsync()
         {
-            var query = await _replyRepository.GetAllAsync(page, size);
+            var query = await _replyRepository.GetAllAsync();
             var list = query.ToList();
             return _mapper.Map<IEnumerable<ReplyResponse>>(list);
         }

@@ -25,12 +25,10 @@ namespace CorlateBlog.Infrastructure.Repositories
             return reply;
         }
 
-        public async Task<IQueryable<ReplyTbl>> GetAllAsync(int page, int size)
+        public async Task<IQueryable<ReplyTbl>> GetAllAsync()
         {
             var query = _context.ReplyTbls
-                .AsNoTracking()
-                .Skip((page - 1) * size)
-                .Take(size);
+                .AsNoTracking();
             return await Task.FromResult(query);
         }
 

@@ -7,7 +7,7 @@ namespace CorlateBlog.Application.Services
     public interface IReplyService
     {
         Task<ReplyResponse> AddAsync(ReplyRequest request);
-        Task<IEnumerable<ReplyResponse>> GetAllAsync(int page, int size);
+        Task<IEnumerable<ReplyResponse>> GetAllAsync();
         Task<ReplyResponse?> GetByIdAsync(string id);
         Task<bool> DeleteAsync(string id);
     }
