@@ -25,14 +25,16 @@ bld/
 **obj/
 **/[Bb]in/*
 **/[Oo]bj/*
+**/appsettings.json
 node_modules
 
 # .NET Core
 project.lock.json
 project.fragment.lock.json
 artifacts/
-/corlate-api/CorlateBlog.Api/appsettings.json
-corlate-api/CorlateBlog.Api/appsettings.Development.json
+CorlateBlog.Api/appsettings.json
+CorlateBlog.Api/appsettings.Development.json
+**/Data/Migrations/*
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
@@ -61,3 +63,4 @@ nunit-*.xml
 .vs/
 
 .fake
+docker-compose.yml
