@@ -66,11 +66,21 @@ namespace CorlateBlog.Application.Services.PostBlogServices
             var todos = await _blogRepository.GetAllBlogsAsync();
             var total = todos.Count();
             var totalPages = (int)Math.Ceiling((double)total / size);
+            var currentPage = page < 1 ? 1 : page;
+            if (currentPage > totalPages)
+            {
+                return new ResponseObject<IEnumerable<BlogResponse>>
+                {
+                    StatusCode = 404,
+                    Message = "Page not found"
+                };
+            }
             return new ResponseObject<IEnumerable<BlogResponse>>
             {
                 StatusCode = 200,
                 Message = "List of todos found",
                 Total = total,
+                CurrentPage = currentPage,
                 TotalPages = totalPages,
                 Data = todos.Skip(offset).Take(size)
                     .Select(blog => _mapper.Map<BlogResponse>(blog)).ToList()

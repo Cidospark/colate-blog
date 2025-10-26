@@ -28,7 +28,15 @@ namespace EmployeeManagmeentSystem.Infrastructure
 
 
             services.AddScoped<IPostCommentRepository, PostCommentRepository>();
+            services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IBlogRepository, BlogRepository>();
+            services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<IBlogRepository, BlogRepository>();
+            services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<IBlogRepository, BlogRepository>();
+            services.AddScoped<IGalleryRepository, GalleryRepository>();
+            services.AddScoped<IBlogSearchRepository, BlogSearchRepository>();
             services.AddAutoMapper(typeof(UserMappingProfile));
             services.AddScoped<IAuthService, AuthService>();
 
