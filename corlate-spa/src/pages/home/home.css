@@ -17,8 +17,13 @@
         grid-template-columns: 70% 30%;
         gap: 10px; 
     }
-    .left-side, .right-side {
-        border: 1px solid #ccc;
+.left-side, .right-side {
+    border: 1px solid #ccc;
+    
+
+
+
+
     }
 
     .commentreply-section {
