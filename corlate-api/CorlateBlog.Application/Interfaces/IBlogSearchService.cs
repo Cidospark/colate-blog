@@ -6,6 +6,6 @@ namespace CorlateBlog.Application.Interfaces
 {
     public interface IBlogSearchService
     {
-        Task<List<BlogSearchResponse>> SearchBlogsAsync(BlogSearchRequest request);
+        Task<BlogSearchResponse> SearchBlogsAsync(BlogSearchRequest request);
     }
 }

@@ -16,7 +16,7 @@ namespace CorlateBlog.Application.Services
             _blogSearchRepository = blogSearchRepository;
         }
 
-        public async Task<List<BlogSearchResponse>> SearchBlogsAsync(BlogSearchRequest request)
+        public async Task<BlogSearchResponse> SearchBlogsAsync(BlogSearchRequest request)
         {
             var query = _blogSearchRepository.GetBlogsForSearch();
 
