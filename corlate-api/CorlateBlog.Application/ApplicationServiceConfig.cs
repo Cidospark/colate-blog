@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-﻿using CorlateBlog.Application.Services.Gallery;
-=======
-﻿using CorlateBlog.Application.Services.PostBlogServices;
->>>>>>> develop
+using CorlateBlog.Application.Services.PostBlogServices;
+using CorlateBlog.Application.Services.Gallery;
 using CorlateBlog.Application.Services.PostCommentServices;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -19,11 +16,8 @@ namespace CorlateBlog.Application
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IPostCommentService, PostCommentService>();
-<<<<<<< HEAD
-            services.AddScoped<IGalleryService, GalleryService>();
-=======
             services.AddScoped<IBlogService, BlogService>();
->>>>>>> develop
+            services.AddScoped<IGalleryService, GalleryService>();
 
             services.AddAutoMapper(typeof(CorlateBlogMappingProfile));
 

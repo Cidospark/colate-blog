@@ -14,8 +14,9 @@ function Home() {
         <div className="left-side">
           <PaginatedList />
         </div>
-        <div className="right-side">Right side</div>
-        <Gallery />
+        <div className="right-side">
+          <Gallery />
+        </div>
       </div>
     </div>
   );
