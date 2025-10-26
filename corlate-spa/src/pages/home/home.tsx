@@ -1,6 +1,7 @@
 import './home.css';
 
 import PaginatedList from '../../components/PaginationClient';
+import TagsList from '../../components/Tags/TagsList';
 
 function Home() {
 	return (
@@ -13,7 +14,10 @@ function Home() {
 				<div className='left-side'>
 					<PaginatedList />
 				</div>
-				<div className='right-side'>Right side</div>
+				<div className='right-side'>
+					
+					<TagsList />
+					Right side</div>
 			</div>
 		</div>
 	);
