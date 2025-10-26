@@ -31,7 +31,7 @@ node_modules
 project.lock.json
 project.fragment.lock.json
 artifacts/
-corlate-api/CorlateBlog.Api/appsettings.json
+/corlate-api/CorlateBlog.Api/appsettings.json
 corlate-api/CorlateBlog.Api/appsettings.Development.json
 
 # ASP.NET Scaffolding

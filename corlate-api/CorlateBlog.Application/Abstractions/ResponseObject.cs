@@ -13,6 +13,8 @@ namespace CorlateBlog.Application.Abstractions
 
         public int? Total { get; set; }
 
+        public int? CurrentPage { get; set; }
+
         public int? TotalPages { get; set; }
         public T? Data { get; set; }
     }

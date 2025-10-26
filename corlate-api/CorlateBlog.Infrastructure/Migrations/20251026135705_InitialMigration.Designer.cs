@@ -8,11 +8,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace CorlateBlog.Infrastructure.Data.Migrations
+namespace CorlateBlog.Infrastructure.Migrations
 {
     [DbContext(typeof(CorlateBlogDbContext))]
-    [Migration("20251024133233_AddTitle")]
-    partial class AddTitle
+    [Migration("20251026135705_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,9 +44,6 @@ namespace CorlateBlog.Infrastructure.Data.Migrations
 
                     b.Property<string>("PostText")
                         .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("PostTitle")
                         .HasColumnType("text");
 
                     b.HasKey("Id");

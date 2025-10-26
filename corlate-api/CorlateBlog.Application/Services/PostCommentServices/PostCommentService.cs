@@ -66,13 +66,14 @@ namespace CorlateBlog.Application.Services.PostCommentServices
 
         public async Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetAllCommentsAsync(int page, int size)
         {
-            var offset = GetOffset(page, size);
+            var offset = PaginationHelper.GetOffset(page, size);
+            size = size < 1 ? 10 : size;
 
             var comments = await _commentRepository.GetAllCommentsAsync();
             var paginatedComments = comments
                 .OrderByDescending(c => c.Id)
                 .Skip(offset)
-                .Take(size)
+                .Take(size) 
                 .Select(comment => _mapper.Map<PostCommentResponse>(comment))
                 .ToList();
 
@@ -84,26 +85,29 @@ namespace CorlateBlog.Application.Services.PostCommentServices
             };
         }
 
-        //public async Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetRecentCommentsAsync(int count)
-        //{
-        //    var comments = await _commentRepository.GetAllCommentsAsync();
-        //    var recentComments = comments
-        //        .OrderByDescending(c => c.Id)
-        //        .Take(count)
-        //        .Select(comment => _mapper.Map<PostCommentResponse>(comment))
-        //        .ToList();
+        public async Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetCommentsByBlogIdAsync(string blogId, int page, int size)
+        {
+            var offset = GetOffset(page, size); 
 
-        //    return new ResponseObject<IEnumerable<PostCommentResponse>>
-        //    {
-        //        StatusCode = 200,
-        //        Message = $"Found {recentComments.Count} recent comments.",
-        //        Data = recentComments
-        //    };
-        //}
+            var commentsQuery = await _commentRepository.GetCommentsByBlogIdAsync(blogId);
+
+            var paginatedComments = commentsQuery
+                .OrderByDescending(c => c.Id)
+                .Skip(offset)
+                .Take(size)
+                .Select(comment => _mapper.Map<PostCommentResponse>(comment))
+                .ToList();
+
+            return new ResponseObject<IEnumerable<PostCommentResponse>>
+            {
+                StatusCode = 200,
+                Message = $"Found {paginatedComments.Count} comments for blog {blogId}",
+                Data = paginatedComments
+            };
+        }
 
         public async Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetRecentCommentsAsync(int page, int size)
         {
-            // Re-using the pagination logic from your TodoApp
             var offset = GetOffset(page, size);
 
             var comments = await _commentRepository.GetAllCommentsAsync();

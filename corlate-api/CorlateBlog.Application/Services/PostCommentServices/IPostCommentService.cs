@@ -12,15 +12,12 @@ namespace CorlateBlog.Application.Services.PostCommentServices
     public interface IPostCommentService
     {
         Task<ResponseObject<PostCommentResponse>> AddCommentAsync(PostCommentRequest request);
-        // GET by ID
         Task<ResponseObject<PostCommentResponse>> GetSingleCommentAsync(string commentId);
-        // GET All (Paginated)
         Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetAllCommentsAsync(int page, int size);
-        // PUT
+
+        Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetCommentsByBlogIdAsync(string blogId, int page, int size);
         Task<ResponseObject<PostCommentResponse>> UpdateCommentAsync(string id, PostCommentRequest request);
-        // DELETE
         Task<ResponseObject<bool>> DeleteCommentAsync(string id);
-        // GET Recent
         Task<ResponseObject<IEnumerable<PostCommentResponse>>> GetRecentCommentsAsync(int page, int size);
     }
 }
