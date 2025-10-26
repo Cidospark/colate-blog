@@ -5,10 +5,6 @@ using CorlateBlog.Application.DTOs.PostCommentDTOs.Request;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Response;
 using CorlateBlog.Application.DTOs.TagDTOs;
 using CorlateBlog.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace TodoApp.Application.Mappers
 {
@@ -16,34 +12,17 @@ namespace TodoApp.Application.Mappers
     {
         public CorlateBlogMappingProfile()
         {
-
-
-
             // POST COMMENT
             CreateMap<PostCommentRequest, PostComment>();
-
             CreateMap<PostComment, PostCommentResponse>();
-<<<<<<< HEAD
-
             // Tag
             CreateMap<TagTblRequest, TagTbl>();
-
             CreateMap<TagTbl, TagTblResponse>();
-
-=======
             CreateMap<TagTblRequest, TagTbl>();
-
             CreateMap<TagTbl, TagTblResponse>();
->>>>>>> develop
-
             // BLOG
             CreateMap<BlogRequest, Blog>();
-
             CreateMap<Blog, BlogResponse>();
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
         }
     }
 }
