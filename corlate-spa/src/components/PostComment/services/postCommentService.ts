@@ -1,13 +1,15 @@
 import type { ApiResponse, CommentResponse } from "../models/postCommentModels";
+import { API_BASE_URL } from "./apiBase";
 
-export const API_BASE_URL = "http://localhost:5086";
-
-export const getAllComments = async (
-  page: number = 2,
-  size: number = 1
+export const getCommentsByBlogId = async (
+  blogId: string,
+  page: number = 1,
+  size: number = 10
 ): Promise<ApiResponse<CommentResponse[]>> => {
+  
+  // Calls your new endpoint: /comment/blog/{blogId}
   const response = await fetch(
-    `${API_BASE_URL}/comment?page=${page}&size=${size}`
+    `${API_BASE_URL}/comment/blog/${blogId}?page=${page}&size=${size}`
   );
 
   if (!response.ok) {

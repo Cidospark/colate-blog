@@ -5,6 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 import BlogCard from './blog/blog-card';
 import { BlogLoadingSkeleton } from './blog/blog-loading-skeleton';
 import { Button } from './ui/button';
+import PostCommentList from './PostComment/PostCommentList/PostCommentList';
 
 export default function BlogDetails() {
 	const { id } = useParams<{ id: string }>();
@@ -25,7 +26,9 @@ export default function BlogDetails() {
 				setLoading(false);
 			}
 		};
-		fetchBlog();
+
+
+		fetchBlog()
 	}, [id]);
 
 	if (loading) {
@@ -59,6 +62,13 @@ export default function BlogDetails() {
 				image={blog.postPhotoUrl}
 				imageAlt={blog.postTitle}
 			/>
+
+			<div className="comments-section" style={{ marginTop: '40px' }}>
+                <h2 className="text-2xl font-bold mb-4">Comments</h2>
+                {id && <PostCommentList blogId={id} />}
+                
+            </div>
+
 		</div>
 	);
 }

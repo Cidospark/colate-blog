@@ -12,8 +12,10 @@ namespace CorlateBlog.Application.Repositories
         Task AddCommentAsync(PostComment comment);
         Task<PostComment?> GetSingleCommentAsync(string commentId);
         Task<IQueryable<PostComment>> GetAllCommentsAsync();
+        Task<IQueryable<PostComment>> GetCommentsByBlogIdAsync(string blogId);
         Task UpdateCommentAsync(PostComment comment);
         Task DeleteCommentAsync(PostComment comment);
+
     }
 }
     

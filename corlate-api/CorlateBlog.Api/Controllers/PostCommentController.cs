@@ -1,9 +1,10 @@
 ﻿
-using Microsoft.AspNetCore.Mvc;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Request;
 using CorlateBlog.Application.Services;
-using System.Threading.Tasks;
 using CorlateBlog.Application.Services.PostCommentServices;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace CorlateBlog.Api.Controllers
 {
@@ -52,12 +53,14 @@ namespace CorlateBlog.Api.Controllers
             return NotFound(result);
         }
 
+        [HttpGet("blog/{blogId}")]
+        public async Task<IActionResult> GetCommentsByBlog(string blogId, [FromQuery] int page, [FromQuery] int size)
+        {
+            var result = await _commentService.GetCommentsByBlogIdAsync(blogId, page, size);
+            return Ok(result);
+        }
+
         [HttpGet("recent")]
-        //public async Task<IActionResult> GetRecent([FromQuery] int count = 5)
-        //{
-        //    var result = await _commentService.GetRecentCommentsAsync(count);
-        //    return Ok(result);
-        //}
         public async Task<IActionResult> GetRecent([FromQuery] int page, [FromQuery] int size)
         {
             var result = await _commentService.GetRecentCommentsAsync(page, size);
