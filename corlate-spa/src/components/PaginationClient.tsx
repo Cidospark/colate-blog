@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import BlogCard from './blog/blog-card';
 
+import BlogCard from './blog/blog-card';
+import { BlogLoadingSkeleton } from './blog/blog-loading-skeleton';
 
 interface Blog {
 	id: string;
@@ -23,6 +24,7 @@ interface ApiResponse<T> {
 
 export default function BlogList() {
 	const [data, setData] = useState<Blog[]>([]);
+	const [loading, setLoading] = useState(true);
 	const [page, setPage] = useState(1);
 	const [totalPages, setTotalPages] = useState(1);
 	const size = 10; // items per page
@@ -30,12 +32,14 @@ export default function BlogList() {
 	useEffect(() => {
 		async function fetchBlogs() {
 			try {
+				setLoading(true);
 				const res = await fetch(
 					`http://localhost:5086/api/v1/Blog?page=${page}&size=${size}`
 				);
 				if (!res.ok) throw new Error('Failed to fetch blogs');
 				const json: ApiResponse<Blog> = await res.json();
 				setData(json.data);
+				setLoading(false);
 				setTotalPages(json.totalPages);
 			} catch (err) {
 				console.error(err);
@@ -44,14 +48,24 @@ export default function BlogList() {
 		fetchBlogs();
 	}, [page]);
 
+	if (loading) {
+		return (
+			<>
+				{Array.from({ length: 5 }).map((_, i) => {
+					return <BlogLoadingSkeleton key={i} />;
+				})}
+			</>
+		);
+	}
+
 	return (
 		<div className='flex flex-col items-center gap-8 p-6'>
 			{/* Blog Cards */}
-			<div className='grid gap-8 w-full max-w-5xl'>
-				{data.map((blog) => (
+			<div className='gap-8 grid w-full max-w-5xl'>
+				{data.map(blog => (
 					<BlogCard
 						key={blog.id}
-                        id={blog.id}
+						id={blog.id}
 						postedAt={new Date().toLocaleDateString()} // Replace with real date when backend provides it
 						postedBy='Admin' // Replace with real author if available
 						comments={blog.commentCount}
@@ -68,13 +82,13 @@ export default function BlogList() {
 			{/* Pagination Controls */}
 			<div className='flex items-center gap-2 mt-4'>
 				<button
-					onClick={() => setPage((p) => Math.max(1, p - 1))}
+					onClick={() => setPage(p => Math.max(1, p - 1))}
 					disabled={page === 1}
-					className='px-3 py-1 border border-rose-700 text-rose-700 rounded disabled:opacity-40'>
+					className='disabled:opacity-40 px-3 py-1 border border-rose-700 rounded text-rose-700'>
 					← Previous
 				</button>
 
-				{[...Array(totalPages)].map((_, i) => {
+				{Array.from({ length: totalPages }).map((_, i) => {
 					const pageNumber = i + 1;
 					return (
 						<button
@@ -91,18 +105,15 @@ export default function BlogList() {
 				})}
 
 				<button
-					onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+					onClick={() => setPage(p => Math.min(totalPages, p + 1))}
 					disabled={page === totalPages}
-					className='px-3 py-1 border border-rose-700 text-rose-700 rounded disabled:opacity-40'>
+					className='disabled:opacity-40 px-3 py-1 border border-rose-700 rounded text-rose-700'>
 					Next →
 				</button>
 			</div>
 		</div>
 	);
 }
-
-
-
 
 //The following is the previous code before editing: a loading skeleton (e.g. shimmer effect while fetching)
 
@@ -158,19 +169,19 @@ export default function BlogList() {
 //   return (
 //     <div className="flex flex-col items-center gap-8 p-6">
 //       {/* Blog Cards */}
-//       <div className="grid gap-8 w-full max-w-5xl">
+//       <div className="gap-8 grid w-full max-w-5xl">
 //         {loading
 //           ? // Show shimmer skeletons while loading
 //             Array.from({ length: size }).map((_, i) => (
 //               <div
 //                 key={i}
-//                 className="animate-pulse flex flex-col gap-4 p-4 border border-gray-200 rounded-md"
+//                 className="flex flex-col gap-4 p-4 border border-gray-200 rounded-md animate-pulse"
 //               >
-//                 <div className="bg-gray-300 h-4 w-1/4 rounded"></div>
-//                 <div className="bg-gray-300 h-56 w-full rounded"></div>
-//                 <div className="bg-gray-300 h-6 w-3/4 rounded"></div>
-//                 <div className="bg-gray-300 h-4 w-full rounded"></div>
-//                 <div className="bg-gray-300 h-10 w-32 rounded"></div>
+//                 <div className="bg-gray-300 rounded w-1/4 h-4"></div>
+//                 <div className="bg-gray-300 rounded w-full h-56"></div>
+//                 <div className="bg-gray-300 rounded w-3/4 h-6"></div>
+//                 <div className="bg-gray-300 rounded w-full h-4"></div>
+//                 <div className="bg-gray-300 rounded w-32 h-10"></div>
 //               </div>
 //             ))
 //           : // Show actual data
@@ -194,7 +205,7 @@ export default function BlogList() {
 //         <button
 //           onClick={() => setPage((p) => Math.max(1, p - 1))}
 //           disabled={page === 1 || loading}
-//           className="px-3 py-1 border border-rose-700 text-rose-700 rounded disabled:opacity-40"
+//           className="disabled:opacity-40 px-3 py-1 border border-rose-700 rounded text-rose-700"
 //         >
 //           ← Previous
 //         </button>
@@ -219,7 +230,7 @@ export default function BlogList() {
 //         <button
 //           onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
 //           disabled={page === totalPages || loading}
-//           className="px-3 py-1 border border-rose-700 text-rose-700 rounded disabled:opacity-40"
+//           className="disabled:opacity-40 px-3 py-1 border border-rose-700 rounded text-rose-700"
 //         >
 //           Next →
 //         </button>
