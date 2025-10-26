@@ -23,18 +23,27 @@ namespace TodoApp.Application.Mappers
             CreateMap<PostCommentRequest, PostComment>();
 
             CreateMap<PostComment, PostCommentResponse>();
+<<<<<<< HEAD
 
             // Tag
             CreateMap<TagTblRequest, TagTbl>();
 
             CreateMap<TagTbl, TagTblResponse>();
 
+=======
+            CreateMap<TagTblRequest, TagTbl>();
+
+            CreateMap<TagTbl, TagTblResponse>();
+>>>>>>> develop
 
             // BLOG
             CreateMap<BlogRequest, Blog>();
 
             CreateMap<Blog, BlogResponse>();
+<<<<<<< HEAD
 
+=======
+>>>>>>> develop
         }
     }
 }
