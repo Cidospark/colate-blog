@@ -1,6 +1,7 @@
 using AutoMapper;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Request;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Response;
+using CorlateBlog.Application.DTOs.TagDTOs;
 using CorlateBlog.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,9 @@ namespace TodoApp.Application.Mappers
             CreateMap<PostCommentRequest, PostComment>();
 
             CreateMap<PostComment, PostCommentResponse>();
+            CreateMap<TagTblRequest, TagTbl>();
+
+            CreateMap<TagTbl, TagTblResponse>();
         }
     }
 }
