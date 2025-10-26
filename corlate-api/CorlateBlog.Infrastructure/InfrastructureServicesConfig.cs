@@ -14,19 +14,12 @@ namespace EmployeeManagmeentSystem.Infrastructure
             services.AddDbContext<CorlateBlogDbContext>(options =>
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
-
             services.AddScoped<IPostCommentRepository, PostCommentRepository>();
-<<<<<<< HEAD
-
-            services.AddScoped<ITagRepository, TagRepository>();
-
-            services.AddScoped<IBlogRepository, BlogRepository>();
-
-=======
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<IBlogRepository, BlogRepository>();
->>>>>>> develop
-
+            services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<IBlogRepository, BlogRepository>();
+            services.AddScoped<IBlogSearchRepository, BlogSearchRepository>();
 
             return services;
         }
