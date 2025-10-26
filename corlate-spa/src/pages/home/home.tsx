@@ -1,4 +1,6 @@
 import "./home.css";
+
+import PaginatedList from "../../components/PaginationClient";
 import Gallery from "../../components/gallery/gallery";
 
 function Home() {
@@ -9,11 +11,11 @@ function Home() {
         <div>A simple blog built by devs in training.</div>
       </div>
       <div className="main-area">
-        <div className="left-side">Left side</div>
-        <div className="right-side">
-          <p>Right side</p>
-          <Gallery />
+        <div className="left-side">
+          <PaginatedList />
         </div>
+        <div className="right-side">Right side</div>
+        <Gallery />
       </div>
     </div>
   );
