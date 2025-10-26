@@ -1,5 +1,3 @@
-// PostReplyCard.tsx (NEW FILE)
-
 import React from "react";
 import type { CommentResponse } from "../models/postCommentModels";
 import { User } from "lucide-react";
@@ -25,12 +23,10 @@ const PostReplyCard: React.FC<ReplyCardProps> = ({ reply, level }) => {
         </header>
         <div className="comment-card-body">
           <p>{reply.comment}</p>
-          {/* ADDED: Reply button on the REPLY card */}
           <button className="reply-action-button">Reply</button>
         </div>
       </article>
 
-      {/* RECURSION: Renders nested replies */}
       {reply.replies && reply.replies.length > 0 && (
         <div className="nested-replies-section">
           {reply.replies.map((nestedReply) => (
