@@ -3,10 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/home";
 import BlogDetails from "./components/BlogDetails";
 import GalleryPage from "./pages/gallery/galleryPage";
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home/home";
-import BlogDetails from "./components/BlogDetails";
 import SearchResults from "./pages/search-results/search-results";
 
 function App() {
@@ -23,13 +19,3 @@ function App() {
 }
 
 export default App;
-
-// import './App.css'
-// import Home from './pages/home/home'
-
-// function App() {
-
-//   return <Home />
-// }
-
-// export default App

@@ -20,9 +20,6 @@ namespace CorlateBlog.Application
 
             services.AddScoped<IBlogService, BlogService>();
             services.AddScoped<IGalleryService, GalleryService>();
-
-            services.AddScoped<ITagService, TagService>();
-            services.AddScoped<IBlogService, BlogService>();
             services.AddScoped<IBlogSearchService, BlogSearchService>();
 
             services.AddAutoMapper(typeof(CorlateBlogMappingProfile));
