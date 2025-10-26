@@ -1,13 +1,15 @@
 ﻿
-using Microsoft.AspNetCore.Mvc;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Request;
 using CorlateBlog.Application.Services;
-using System.Threading.Tasks;
 using CorlateBlog.Application.Services.PostCommentServices;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace CorlateBlog.Api.Controllers
 {
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("[controller]")]
     public class CommentController : ControllerBase
     {

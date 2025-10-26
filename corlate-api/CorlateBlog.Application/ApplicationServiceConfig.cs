@@ -19,6 +19,7 @@ namespace CorlateBlog.Application
 
             services.AddAutoMapper(typeof(CorlateBlogMappingProfile));
 
+
             return services;
         }
     }
