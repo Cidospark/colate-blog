@@ -7,6 +7,7 @@ using CorlateBlog.Application.DTOs.PostCommentDTOs.Response;
 using CorlateBlog.Application.DTOs.TagDTOs;
 using CorlateBlog.Application.DTOs.PostCategory.Request;
 using CorlateBlog.Application.DTOs.PostCategory.Response;
+using CorlateBlog.Application.DTOs.RepliesDTO;
 using CorlateBlog.Domain.Entities;
 
 namespace CorlateBlog.Application.Mappers
@@ -31,6 +32,13 @@ namespace CorlateBlog.Application.Mappers
             CreateMap<Blog, BlogResponse>().ReverseMap();
             // Gallery
             CreateMap<GalleryResponse, Blog>().ReverseMap();
+            CreateMap<BlogRequest, Blog>();
+
+            CreateMap<Blog, BlogResponse>();
+            // REPLY
+            CreateMap<ReplyRequest, ReplyTbl>();
+            CreateMap<ReplyTbl, ReplyResponse>();
+
         }
     }
 }
