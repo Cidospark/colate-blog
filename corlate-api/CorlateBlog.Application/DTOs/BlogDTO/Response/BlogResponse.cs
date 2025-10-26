@@ -2,13 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CorlateBlog.Domain.Entities;
 
-namespace CorlateBlog.Domain.Entities
+namespace CorlateBlog.Application.DTOs.BlogDTO.Response
 {
-    public class Blog
+    public class BlogResponse
     {
         public string Id { get; set; } = Guid.NewGuid().ToString();
         public string PostText { get; set; } = "";
+
+        public string PostTitle { get; set; } = "";
         public string PostPhotoUrl { get; set; } = "";
         public int PostLikesCount { get; set; }
         public int CommentsReplies { get; set; }
