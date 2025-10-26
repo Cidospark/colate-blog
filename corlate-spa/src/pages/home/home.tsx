@@ -1,11 +1,10 @@
 import "./home.css";
-import PaginatedList from '../../components/PaginationClient';
-import TagsList from '../../components/Tags/TagsList';
+import PaginatedList from "../../components/PaginationClient";
+import TagsList from "../../components/Tags/TagsList";
 import BlogSearch from "../../components/blog/blog-search";
 import Gallery from "../../components/gallery/gallery";
-import BlogCard from '../../components/blog/blog-card';
-import CategorySidebar from '../../components/category/CategorySidebar';
-
+import CategorySidebar from "../../components/category/CategorySidebar";
+import RecentComments from "../../components/RecentComments/RecentComment";
 
 function Home() {
   return (
@@ -18,12 +17,13 @@ function Home() {
         <div className="left-side">
           <PaginatedList />
         </div>
-              <div className="right-side">
-                  <BlogSearch />
-				  <CategorySidebar />
-                  <Gallery />
-                  <TagsList />
-              </div>
+        <div className="right-side">
+          <BlogSearch />
+          <RecentComments />
+          <CategorySidebar />
+          <Gallery />
+          <TagsList />
+        </div>
       </div>
     </div>
   );
