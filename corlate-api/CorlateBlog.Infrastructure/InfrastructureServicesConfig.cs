@@ -39,6 +39,9 @@ namespace EmployeeManagmeentSystem.Infrastructure
             services.AddScoped<IBlogSearchRepository, BlogSearchRepository>();
             services.AddAutoMapper(typeof(UserMappingProfile));
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IReplyRepository, ReplyRepository>();
+
+
 
             return services;
         }

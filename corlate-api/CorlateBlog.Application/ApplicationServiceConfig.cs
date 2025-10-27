@@ -19,6 +19,8 @@ namespace CorlateBlog.Application
 
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IBlogService, BlogService>();
+            services.AddScoped<IReplyService, ReplyService>();
+
 
 
             services.AddScoped<ITagService, TagService>();
