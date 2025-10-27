@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ArchiveItem from "./ArchiveItem";
 import "./ArchiveSection.css";
-import { fetchArchives } from "./archiveApi";
+import { fetchArchives } from "../../services/archiveApi";
 
 interface Archive {
   year: number;
