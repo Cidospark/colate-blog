@@ -1,9 +1,11 @@
 using CorlateBlog.Domain.Entities;
+using CorlateBlog.Infrastructure.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CorlateBlog.Infrastructure.Data
 {
-    public class CorlateBlogDbContext : DbContext
+    public class CorlateBlogDbContext : IdentityDbContext<ApplicationUser>
     {
         public CorlateBlogDbContext(DbContextOptions<CorlateBlogDbContext> options) : base(options)
         {

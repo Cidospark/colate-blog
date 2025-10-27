@@ -1,6 +1,7 @@
 using AutoMapper;
 using CorlateBlog.Application.DTOs.BlogDTO.Request;
 using CorlateBlog.Application.DTOs.BlogDTO.Response;
+using CorlateBlog.Application.DTOs.IdentityDTO.Request;
 using CorlateBlog.Application.DTOs.Gallery;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Request;
 using CorlateBlog.Application.DTOs.PostCommentDTOs.Response;

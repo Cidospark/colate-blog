@@ -3,17 +3,20 @@ using System;
 using CorlateBlog.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace CorlateBlog.Infrastructure.Migrations
+namespace CorlateBlog.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(CorlateBlogDbContext))]
-    partial class CorlateBlogDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251026095934_thirdMig")]
+    partial class thirdMig
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -208,6 +211,8 @@ namespace CorlateBlog.Infrastructure.Migrations
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
@@ -393,6 +398,17 @@ namespace CorlateBlog.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Blog");
+                });
+
+            modelBuilder.Entity("CorlateBlog.Infrastructure.Identity.ApplicationUser", b =>
+                {
+                    b.HasOne("CorlateBlog.Infrastructure.Identity.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace CorlateBlog.Api.Controllers
 {
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("[controller]")]
     public class CommentController : ControllerBase
     {
