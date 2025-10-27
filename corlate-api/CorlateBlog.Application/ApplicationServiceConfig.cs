@@ -1,9 +1,11 @@
+using CorlateBlog.Application.Interfaces;
+using CorlateBlog.Application.Mappers;
+using CorlateBlog.Application.Services;
+using CorlateBlog.Application.Services.Gallery;
+using CorlateBlog.Application.Services.PostBlogServices;
 using CorlateBlog.Application.Services.PostCommentServices;
 using CorlateBlog.Application.Services.TagService;
-using CorlateBlog.Application.Services.PostBlogServices;
-using CorlateBlog.Application.Services.Gallery;
-using CorlateBlog.Application.Services;
-using CorlateBlog.Application.Interfaces;
+using CorlateBlog.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 using CorlateBlog.Application.Mappers;
 
@@ -30,6 +32,7 @@ namespace CorlateBlog.Application
             services.AddScoped<IBlogSearchService, BlogSearchService>();
 
             services.AddAutoMapper(typeof(CorlateBlogMappingProfile));
+            services.AddScoped<Api.Services.IArchiveService, ArchiveService>(); 
 
 
             return services;

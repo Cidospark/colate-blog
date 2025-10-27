@@ -13,6 +13,7 @@ namespace CorlateBlog.Domain.Entities
         public int PostLikesCount { get; set; }
         public int CommentsReplies { get; set; }
         public int CommentCount { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public ICollection<TagTbl> PostTags { get; set; } = [];
         public ICollection<PostComment> PostComments { get; set; } = [];
         public ICollection<PostCategoryTbl> PostCategories { get; set; } = [];

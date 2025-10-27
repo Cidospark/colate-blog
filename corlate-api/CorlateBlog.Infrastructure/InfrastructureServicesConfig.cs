@@ -1,3 +1,4 @@
+using CorlateBlog.Application.Interfaces;
 using CorlateBlog.Application.Repositories;
 using CorlateBlog.Application.Services.Identity;
 using CorlateBlog.Infrastructure.Data;
@@ -40,7 +41,7 @@ namespace EmployeeManagmeentSystem.Infrastructure
             services.AddAutoMapper(typeof(UserMappingProfile));
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IReplyRepository, ReplyRepository>();
-
+            services.AddScoped<IArchiveRepository, ArchiveRepository>();
 
 
             return services;
