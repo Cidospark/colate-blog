@@ -5,6 +5,7 @@ import BlogSearch from "../../components/blog/blog-search";
 import Gallery from "../../components/gallery/gallery";
 import CategorySidebar from "../../components/category/CategorySidebar";
 import RecentComments from "../../components/RecentComments/RecentComment";
+import ArchiveSection from "../../components/Archive/ArchiveSection";
 
 function Home() {
   return (
@@ -21,8 +22,9 @@ function Home() {
           <BlogSearch />
           <RecentComments />
           <CategorySidebar />
-          <Gallery />
           <TagsList />
+          <Gallery />
+          <ArchiveSection />
         </div>
       </div>
     </div>

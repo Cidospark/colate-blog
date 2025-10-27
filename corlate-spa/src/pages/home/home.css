@@ -1,7 +1,7 @@
 .my-container{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 70%;
-    border: 1px solid #ccc;
+    background-color: white;
     border-radius: 16px;
     margin: 5% auto;
     box-sizing: border-box;
@@ -9,6 +9,10 @@
 
     .title{
         text-align: center;
+        h1{
+            font-size: 40px;
+            /* font-weight: bold; */
+        }
     }
 
     .main-area{
@@ -17,19 +21,17 @@
         grid-template-columns: 70% 30%;
         gap: 10px; 
     }
-.left-side, .right-side {
-    border: 1px solid #ccc;
-    
 
-
-
-
-    }
 
     .commentreply-section {
         margin-top: 2rem;
         padding: 0 0.8rem;
         width: 80%;
         background: red;
+    }
+    .left-side{
+        border-right: 1px solid #eee;
+        margin-right: 20px;
+        padding-right: 30px;
     }
 }

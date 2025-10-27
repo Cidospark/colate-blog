@@ -7,6 +7,7 @@
 }
 
 .tagcloud-card {
+    margin-top: 2rem;
     background: #ffffff;
     border-radius: 6px;
     padding: 14px;
@@ -98,25 +99,6 @@
 
 
 
-.right-side {
-    position: relative; 
-}
-
-    
-    .right-side .tagcloud-sidebar {
-        position: absolute;
-        left: 12px; /* distance from left edge of right column — tweak if needed */
-        bottom: 300px; /* distance from bottom edge of right column */
-        width: calc(100% - 24px); 
-        max-width: 260px; 
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    
-    .right-side .tagcloud-card {
-        width: 100%;
-    }
 
 
 @media (max-width: 880px) {

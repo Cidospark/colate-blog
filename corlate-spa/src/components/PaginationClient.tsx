@@ -65,9 +65,9 @@ export default function BlogList() {
 	}
 
 	return (
-		<div className='flex flex-col items-center gap-8 p-6'>
+		<div className='flex flex-col items-center gap-8 p-0'>
 			{/* Blog Cards */}
-			<div className='gap-8 grid w-full max-w-5xl'>
+			<div className='gap-8 grid w-full max-w-5xl space-y-10'>
 				{data.map(blog => (
 					<BlogCard
 						key={blog.id}

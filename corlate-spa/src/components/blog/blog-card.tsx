@@ -34,7 +34,7 @@ export default function BlogCard({
 	return (
 		<Card
 			className={cn(
-				`flex md:flex-row flex-col bg-none shadow-none p-0 border-0 rounded-none w-full overflow-hidden`,
+				`flex md:flex-row flex-col bg-none p-0 shadow-none p-0 border-0 rounded-none w-full overflow-hidden`,
 				className
 			)}
 			{...props}>
@@ -73,7 +73,7 @@ export default function BlogCard({
 			</div>
 
 			{/* Main Content */}
-			<CardContent className='flex-1 shadow-none p-6 py-0 border-0'>
+			<CardContent className='flex-1 shadow-none p-0 border-0'>
 				{/* Image */}
 				<img
 					loading='lazy'

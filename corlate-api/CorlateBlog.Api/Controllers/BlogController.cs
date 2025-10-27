@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CorlateBlog.Api.Controllers
 {
     [ApiController]
-    [Authorize(AuthenticationSchemes = "Bearer")]
+    // [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("api/v1/[controller]")]
     public class BlogController : ControllerBase
     {
@@ -40,6 +40,7 @@ namespace CorlateBlog.Api.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetSingle([FromRoute] string id)
         {
             var result = await _blogService.GetSingleBlogAsync(id);

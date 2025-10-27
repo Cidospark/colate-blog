@@ -10,7 +10,7 @@ export interface ArchiveResponse {
 }
 
 export const fetchArchives = async (): Promise<ArchiveResponse> => {
-  const response = await fetch("http://localhost:5086/api/archive", {
+  const response = await fetch("http://localhost:5086/archive", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
