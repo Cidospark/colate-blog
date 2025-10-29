@@ -40,7 +40,7 @@ export default function BlogDetails() {
 	}
 
 	return (
-		<div className='mx-auto px-4 py-10 max-w-5xl'>
+			<div className='mx-auto px-4 py-10 max-w-5xl'>
 			<Button
 				onClick={() => navigate(-1)}
 				className='bg-rose-700 hover:bg-rose-700/90 mb-6 text-white'>
@@ -50,6 +50,7 @@ export default function BlogDetails() {
 				/>{' '}
 				Back
 			</Button>
+		<div style={{backgroundColor:"white", padding:"20px", borderRadius:"10px"}}>
 
 			<BlogCard
 				id={blog.id}
@@ -61,7 +62,8 @@ export default function BlogDetails() {
 				description={blog.postText}
 				image={blog.postPhotoUrl}
 				imageAlt={blog.postTitle}
-			/>
+				/>
+		</div>
 
 			<div className="comments-section" style={{ marginTop: '40px' }}>
                 {id && <PostCommentList blogId={id} />}

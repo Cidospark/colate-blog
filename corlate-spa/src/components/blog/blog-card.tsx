@@ -23,7 +23,7 @@ export default function BlogCard({
 	postedBy,
 	comments,
 	likes,
-	title,
+	//title,
 	description,
 	image,
 	imageAlt,
@@ -83,10 +83,13 @@ export default function BlogCard({
 				/>
 
 				{/* Title */}
-				<h2 className='mb-2 font-bold text-rose-700 text-2xl'>{title}</h2>
+				<h2 className='mb-2 font-bold text-rose-700 text-2xl'>{description}</h2>
 
 				{/* Excerpt */}
-				<p className='mb-6 text-gray-700 leading-relaxed'>{description}</p>
+				<p className='mb-6 text-gray-700 leading-relaxed'>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quaerat eius. Officiis cum tenetur fuga inventore ducimus, error iusto minus in eum reiciendis fugit, id vitae sunt, nobis recusandae a?
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit labore quas autem soluta dolorem natus earum maiores amet nobis eos quam doloribus perferendis eius itaque, necessitatibus molestias! Odio, voluptate magni?
+				</p>
 
 				{/* Button */}
 				{hasReadMoreButton && (
