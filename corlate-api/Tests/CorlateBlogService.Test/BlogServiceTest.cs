@@ -38,6 +38,19 @@ public class BlogServiceTest
         //var expectedResponse = new BlogResponse();
         mapperInstance.Setup(mapper => mapper.Map<BlogResponse>(expectValue));
 
+        // or follow this example
+        /*
+        // Example: Setting up a specific mapping from SourceClass to DestinationClass
+    mockMapper.Setup(m => m.Map<DestinationClass>(It.IsAny<SourceClass>()))
+              .Returns((SourceClass source) => new DestinationClass {  //populate properties based on source//  });
+
+    // You can also set up specific return values for specific inputs
+    var sourceObject = new SourceClass { Id = 1, Name = "Test" };
+    var expectedDestination = new DestinationClass { Id = 1, FullName = "Test" };
+    mockMapper.Setup(m => m.Map<DestinationClass>(sourceObject))
+              .Returns(expectedDestination);
+        */
+
         // Act
         var blogService = new BlogService(mockRepository.Object, mapperInstance.Object);
         var result = blogService.GetAllBlogsAsync(page, size);
